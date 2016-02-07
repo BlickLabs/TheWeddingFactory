@@ -52,5 +52,6 @@ $result = curl_exec($curl);
 
 curl_close($curl);
 
+echo 'Gracias La información ha sido enviada correctamente!';
 
 ?>

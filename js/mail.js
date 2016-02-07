@@ -21,6 +21,7 @@ $(document).ready(function() {
                 success: function(data){
                     $("#ok").html(data);
                     $("#ok").show();
+                    document.getElementById('formid').reset();
                  
                 }
             });
