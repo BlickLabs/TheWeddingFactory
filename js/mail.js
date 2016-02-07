@@ -21,7 +21,7 @@ $(document).ready(function() {
                 success: function(data){
                     $("#ok").html(data);
                     $("#ok").show();
-                    $("#formid").hide();
+                 
                 }
             });
         }
