@@ -1,0 +1,67 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 9/12/2015, 09:58:15 PM
+    Author     : tono
+*/
+
+  @font-face {
+  font-family: "Avenir-Light";
+  src: url("../fonts/AvenirLTStd-Light.otf");
+  }
+  
+    .Avenir-Light {
+  font-family: Avenir-Light;
+  }
+  
+    @font-face {
+  font-family: "Avenir-Medium";
+  src: url("../fonts/AvenirLTStd-Medium.otf");
+  }
+    
+    .Avenir-Medium {
+  font-family: Aveir-Medium;
+  }
+  
+     @font-face {
+  font-family: "Avenir-Roman";
+  src: url("../fonts/AvenirLTStd-Roman.otf");
+  }
+    
+    .Avenir-Roman {
+  font-family: Avenir-Roman;
+  }
+  
+       @font-face {
+  font-family: "I_Love";
+  src: url("../fonts/Mf I Love Glitter.ttf");
+  }
+    
+    .I_love {
+  font-family: I_love;
+  }
+  
+        @font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../fonts/Montserrat-Regular.otf");
+  }
+    
+    .Montserrat-Regular {
+  font-family:Montserrat-Regular;
+  }
+    
+        @font-face {
+  font-family: "arabella_Demo";
+  src: url("../fonts/arabella Demo.ttf");
+  }
+    
+    .arabella_Demo{
+  font-family:arabella_Demo;
+   font-style: italic;
+  }
+ 
+ 
+ 
