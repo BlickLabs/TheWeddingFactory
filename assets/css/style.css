@@ -237,12 +237,12 @@ transition: all 0.4s ease 0s;
 }
 .navbar-brand { padding: 4px }
 .navbar-brand img {
-    height: 40px;
+    height: 80px;
 }
 @media only screen and (max-width:768px) { 
 .navbar-brand img {
-    height: 40px;
-	width:135px;
+    height: 80px;
+	
 }
 }
 .navbar-default .navbar-nav>li>a {
