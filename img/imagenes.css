@@ -1,0 +1,62 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 12/02/2016, 09:00:33 PM
+    Author     : tono
+*/
+
+.wedding{
+    width: 125px;
+    height: 130px;
+    background: url('wedding.png')no-repeat;
+}
+
+.wedding:hover{
+    width: 125px;
+    height: 130px;
+    background: url('wedding_1.png')no-repeat;
+}
+
+.nutrition{
+    width: 125px;
+    height: 130px;
+    background: url('nutrition.png')no-repeat;
+}
+.nutrition:hover{
+    width: 125px;
+    height: 130px;
+    background: url('nutrition_1.png')no-repeat;
+}
+.flower{
+    width: 125px;
+    height: 130px;
+    background: url('flower.png')no-repeat;    
+}
+.flower:hover{
+    width: 125px;
+    height: 130px;
+    background: url('flower_1.png')no-repeat;
+}
+.cake{
+    width: 125px;
+    height: 130px;
+    background: url('cake.png')no-repeat;
+}
+.cake:hover{
+    width: 125px;
+    height: 130px;
+    background: url('cake_1.png')no-repeat;
+}
+.toy{
+    width:125px;
+    height: 130px;
+    background: url('toy.png')no-repeat;
+}
+.toy:hover{
+    width: 125px;
+    height: 130px;
+    background: url('toy_1.png')no-repeat;
+}
