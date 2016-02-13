@@ -42,7 +42,7 @@ body {
 }
 html,
 body { height: 100% }
-h1,
+
 h2,
 h3,
 h4,
@@ -119,12 +119,14 @@ fieldset {
 /*START SECTION TITLE DESIGN*/
 .section-title { margin-bottom: 50px }
 .section-title h1 {
-    color: #55ACEF;
+    color: #000;
     font-weight: 700;
     text-transform: uppercase;
+    letter-spacing: 8px;
 }
 @media only screen and (max-width:768px) { 
     .section-title h1 { text-align: center }
+    
 }
 @media only screen and (max-width:480px) { 
     .section-title h1 { 
@@ -142,11 +144,11 @@ fieldset {
 }
 .section-title h4 { line-height: 30px }
 .section-title span {
-    background: #55ACEF none repeat scroll 0 0;
+    background: #000 none repeat scroll 0 0;
     display: block;
     height: 2px;
-    margin: 20px auto;
-    width: 50px;
+    margin: 10px auto;
+    width: 80px;
 }
 @media only screen and (max-width:768px) { 
     .section-title span {
@@ -444,7 +446,7 @@ transition: all 0.4s ease 0s;
     text-transform: uppercase;
     color: #fff;
 }
-.single_about p { color: #fff;margin-bottom:0;font-size: 20px; }
+.single_about p { color: #fff;margin-bottom:0;font-size: 26px; }
 
 /*
  * ----------------------------------------------------------------------------------------
