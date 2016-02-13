@@ -182,11 +182,11 @@ background: #55acef none repeat scroll 0 0;
 border: 1px solid #e8e8e9;
 border-radius: 0;
 color: #fff;
-font-size: 12px;
+font-size: 14px;
 font-weight: 700;
 margin-bottom: 0;
 padding: 10px 20px;
-text-transform: uppercase;
+
 transition: all 0.4s ease 0s;
 }
 .btn-theme-bg:hover,
@@ -237,13 +237,13 @@ transition: all 0.4s ease 0s;
     color: #55acef !important;
     background-color: transparent;
 }
-.navbar-brand { padding: 4px }
+.navbar-brand { padding: 2px }
 .navbar-brand img {
-    height: 80px;
+    height:100px;
 }
 @media only screen and (max-width:768px) { 
 .navbar-brand img {
-    height: 80px;
+    height: 100px;
 	
 }
 }
@@ -325,10 +325,8 @@ height: 100%;
 }
 .hero-text h2 {
     color: #fff;
-    font-size: 60px;
-    line-height: 84px;
-    padding-top: 200px;
-    text-transform: capitalize;
+    font-size: 110px;
+    padding-top: 250px;
 }
 @media only screen and (max-width:768px) { 
     .hero-text h2 { font-size: 54px }
@@ -426,14 +424,15 @@ height: 100%;
  * ----------------------------------------------------------------------------------------
  */
 .single_about {
-    padding: 30px;
+    padding: 70px;
+    padding-bottom: 70px;
     -webkit-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
 }
 .single_about i {
 border-radius: 100px;
 color: #fff;
-font-size: 30px;
+font-size: 80px;
 padding-bottom: 25px;
 transition: all 0.4s ease 0s;
 }
@@ -445,7 +444,7 @@ transition: all 0.4s ease 0s;
     text-transform: uppercase;
     color: #fff;
 }
-.single_about p { color: #fff;margin-bottom:0; }
+.single_about p { color: #fff;margin-bottom:0;font-size: 20px; }
 
 /*
  * ----------------------------------------------------------------------------------------

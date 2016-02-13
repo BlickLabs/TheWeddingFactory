@@ -126,7 +126,7 @@ margin-top: 60px;
 outline: 1px solid #e8e8e9;
 outline-offset: 2px;
 padding: 10px 20px;
-text-transform: uppercase;
+
 transition: all 0.4s ease 0s;
 }
 .btn-theme-bg:hover,
