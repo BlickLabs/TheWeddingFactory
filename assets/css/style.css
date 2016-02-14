@@ -117,7 +117,7 @@ fieldset {
 /*START SECTION TITLE DESIGN*/
 .section-title { margin-bottom: 50px }
 .section-title h1 {
-    color: #55ACEF;
+    color: #000;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -140,11 +140,11 @@ fieldset {
 }
 .section-title h4 { line-height: 30px }
 .section-title span {
-    background: #55ACEF none repeat scroll 0 0;
+    background: #000 none repeat scroll 0 0;
     display: block;
     height: 2px;
-    margin: 20px auto;
-    width: 50px;
+    margin: 10px auto;
+    width: 80px;
 }
 @media only screen and (max-width:768px) { 
     .section-title span {
@@ -180,11 +180,10 @@ background: #55acef none repeat scroll 0 0;
 border: 1px solid #e8e8e9;
 border-radius: 0;
 color: #fff;
-font-size: 12px;
+font-size: 16px;
 font-weight: 700;
 margin-bottom: 0;
 padding: 10px 20px;
-text-transform: uppercase;
 transition: all 0.4s ease 0s;
 }
 .btn-theme-bg:hover,
@@ -325,7 +324,6 @@ height: 100%;
     color: #fff;
     font-size: 110px;
     line-height: 84px;
-    
     text-transform: capitalize;
 }
 @media only screen and (max-width:768px) { 
@@ -1156,7 +1154,7 @@ margin-bottom: 0;
 input.form-control {
     background: #fff none repeat scroll 0 0;
     border: 1px solid #e8e8e9;
-    border-radius: 10px !important;
+    border-radius: 15px !important;
     color: #222;
     height: 45px;
     box-shadow: none;
@@ -1165,12 +1163,12 @@ textarea.form-control {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
     border: 1px solid #e8e8e9;
     color: #222;
-    border-radius: 10px !important; 
+    border-radius: 15px !important; 
     box-shadow: none;
     
 }
 .form-control:focus {
-    border: 1px solid #55ACEF;
+    border: 1px solid #000;
     box-shadow: none;
     outline: 0 none;
 }
