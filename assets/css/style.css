@@ -42,7 +42,7 @@ body {
 }
 html,
 body { height: 100% }
-
+h1,
 h2,
 h3,
 h4,
@@ -99,8 +99,6 @@ fieldset {
     position: absolute;
     top: 50%;
     width: 200px;
-    
-    
 }
 .status-mes {
     background: none;
@@ -119,14 +117,12 @@ fieldset {
 /*START SECTION TITLE DESIGN*/
 .section-title { margin-bottom: 50px }
 .section-title h1 {
-    color: #000;
+    color: #55ACEF;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 8px;
 }
 @media only screen and (max-width:768px) { 
     .section-title h1 { text-align: center }
-    
 }
 @media only screen and (max-width:480px) { 
     .section-title h1 { 
@@ -144,11 +140,11 @@ fieldset {
 }
 .section-title h4 { line-height: 30px }
 .section-title span {
-    background: #000 none repeat scroll 0 0;
+    background: #55ACEF none repeat scroll 0 0;
     display: block;
     height: 2px;
-    margin: 10px auto;
-    width: 80px;
+    margin: 20px auto;
+    width: 50px;
 }
 @media only screen and (max-width:768px) { 
     .section-title span {
@@ -184,11 +180,11 @@ background: #55acef none repeat scroll 0 0;
 border: 1px solid #e8e8e9;
 border-radius: 0;
 color: #fff;
-font-size: 14px;
+font-size: 12px;
 font-weight: 700;
 margin-bottom: 0;
 padding: 10px 20px;
-
+text-transform: uppercase;
 transition: all 0.4s ease 0s;
 }
 .btn-theme-bg:hover,
@@ -239,14 +235,14 @@ transition: all 0.4s ease 0s;
     color: #55acef !important;
     background-color: transparent;
 }
-.navbar-brand { padding: 2px }
+.navbar-brand { padding: 4px }
 .navbar-brand img {
-    height:100px;
+    height: 40px;
 }
 @media only screen and (max-width:768px) { 
 .navbar-brand img {
-    height: 100px;
-	
+    height: 40px;
+	width:135px;
 }
 }
 .navbar-default .navbar-nav>li>a {
@@ -328,7 +324,9 @@ height: 100%;
 .hero-text h2 {
     color: #fff;
     font-size: 110px;
+    line-height: 84px;
     padding-top: 250px;
+    text-transform: capitalize;
 }
 @media only screen and (max-width:768px) { 
     .hero-text h2 { font-size: 54px }
@@ -426,15 +424,14 @@ height: 100%;
  * ----------------------------------------------------------------------------------------
  */
 .single_about {
-    padding: 70px;
-    padding-bottom: 70px;
+    padding: 30px;
     -webkit-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
 }
 .single_about i {
 border-radius: 100px;
 color: #fff;
-font-size: 80px;
+font-size: 30px;
 padding-bottom: 25px;
 transition: all 0.4s ease 0s;
 }
@@ -446,7 +443,7 @@ transition: all 0.4s ease 0s;
     text-transform: uppercase;
     color: #fff;
 }
-.single_about p { color: #fff;margin-bottom:0;font-size: 26px; }
+.single_about p { color: #fff;margin-bottom:0; }
 
 /*
  * ----------------------------------------------------------------------------------------
@@ -1168,8 +1165,9 @@ textarea.form-control {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
     border: 1px solid #e8e8e9;
     color: #222;
-    border-radius: 10px !important;
+    border-radius: 10px !important; 
     box-shadow: none;
+    
 }
 .form-control:focus {
     border: 1px solid #55ACEF;

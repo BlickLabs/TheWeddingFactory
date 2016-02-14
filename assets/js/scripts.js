@@ -13,7 +13,6 @@ $(document).ready(function(){
 		$(window).load(function() { 
 			$('.status').fadeOut();
 			$('.preloader').delay(350).fadeOut('slow'); 
-                            
 		}); 
 		/*End preloader*/
 
@@ -76,11 +75,13 @@ $(document).ready(function(){
 				speed: 3000 // How many milliseconds until the next word show.
 			});
 		}
-		
+		/* End Textrotator */
+  
+  
   
   
   
 });
-})(jQuery);
 
+})(jQuery);
 
