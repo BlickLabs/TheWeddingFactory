@@ -325,7 +325,7 @@ height: 100%;
     color: #fff;
     font-size: 110px;
     line-height: 84px;
-    padding-top: 250px;
+    
     text-transform: capitalize;
 }
 @media only screen and (max-width:768px) { 
