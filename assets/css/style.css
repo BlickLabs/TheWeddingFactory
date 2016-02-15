@@ -117,7 +117,7 @@ fieldset {
 /*START SECTION TITLE DESIGN*/
 .section-title { margin-bottom: 50px }
 .section-title h1 {
-    color: #000;
+    color: #34454d;
     text-transform: uppercase;
 }
 @media only screen and (max-width:768px) { 
@@ -139,11 +139,11 @@ fieldset {
 }
 .section-title h4 { line-height: 30px }
 .section-title span {
-    background: #000 none repeat scroll 0 0;
+    background: #34454d none repeat scroll 0 0;
     display: block;
-    height: 2px;
+    height: 1px;
     margin: 10px auto;
-    width: 85px;
+    width: 100px;
 }
 @media only screen and (max-width:768px) { 
     .section-title span {
@@ -472,6 +472,7 @@ width: 100px;
 .about_single h4 {
     margin-top: 10px;
     font-weight: 600;
+    color: #34454d;
 }
 @media only screen and (max-width:480px) { 
     .about_single { margin-bottom: 20px }
