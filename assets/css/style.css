@@ -318,7 +318,7 @@ transition: all 0.4s ease 0s;
 }
 
 .home_overlay {
-background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+background: rgba(0, 0, 0, 0.1) none repeat scroll 0 0;
 height: 100%;
 }
 .hero-text h2 {
