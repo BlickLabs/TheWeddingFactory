@@ -324,7 +324,7 @@ height: 100%;
 .hero-text h2 {
     color: #fff;
     font-size: 110px;
-    line-height: 90%;
+    line-height: 95%;
     text-transform: capitalize;
 }
 @media only screen and (max-width:768px) { 
