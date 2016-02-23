@@ -62,6 +62,16 @@ and open the template in the editor.
   font-family:arabella_Demo;
    font-style: italic;
   }
+  
+          @font-face {
+  font-family: "Shorelines";
+  src: url("../fonts/Shorelines Script Bold.otf");
+  }
+    
+    .Shorelines{
+  font-family:Shorelines;
+   
+  }
  
  
  
