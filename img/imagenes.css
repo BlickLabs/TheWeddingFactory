@@ -23,12 +23,12 @@ and open the template in the editor.
 .nutrition{
     width: 125px;
     height: 130px;
-    background: url('nutrition.png')no-repeat;
+    background: url('pink_apple.png')no-repeat;
 }
 .nutrition:hover{
     width: 125px;
     height: 130px;
-    background: url('nutrition_1.png')no-repeat;
+    background: url('yellow_apple.png')no-repeat;
 }
 .flower{
     width: 125px;
@@ -59,4 +59,14 @@ and open the template in the editor.
     width: 125px;
     height: 130px;
     background: url('toy_1.png')no-repeat;
+}
+.sitio_web{
+    width:125px;
+    height: 130px;
+    background: url('yellow_card.png')no-repeat;
+}
+.sitio_web:hover{
+    width: 125px;
+    height: 130px;
+    background: url('pink_card.png')no-repeat;
 }
