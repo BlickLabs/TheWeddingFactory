@@ -121,6 +121,11 @@ fieldset {
     text-transform: uppercase;
     font-size: 40px;
 }
+.section-title2 h1 {
+    line-height: 75px;
+    
+    font-size: 45px;
+}
 @media only screen and (max-width:768px) { 
     .section-title h1 { text-align: center }
 }
@@ -245,21 +250,22 @@ transition: all 0.4s ease 0s;
 }
 }
 .navbar-default .navbar-nav>li>a {
-    font-weight: 950;
+    font-weight: 700;
     font-size: 14px;
-    text-align: center;
+    
 }
 @media only screen and (max-width:768px) { 
     .navbar-default .navbar-nav > li > a {
         margin-top: 10px;
         padding: 8px;
-        text-align: center;
+  
     }
 }
 .menu-top {
     background-color: transparent;
     width: 100%;
 }
+
 @media only screen and (max-width:768px) { 
     .menu-top { background-color: #fff }
     .navbar-default .navbar-nav > li > a { color: #333 !important }
@@ -296,6 +302,43 @@ transition: all 0.4s ease 0s;
         margin-left: 0px;
     }
 }
+//menu top 2
+.menu-top2 {
+    background-color: transparent;
+    width: 100%;
+}
+
+.menu-top2 li a {
+    color: #000 !important;
+    text-transform: uppercase;
+}
+.menu-top2 {
+    color: #f3f3f3 !important;
+    text-transform: uppercase;
+}
+@media only screen and (max-width:480px) { 
+    .menu-top2 {
+        color: #f3f3f3 !important;
+        margin-left: 0px;
+    }
+}
+@media only screen and (max-width:768px) { 
+    .menu-top2 { background-color: #fff }
+    .navbar-default .navbar-nav > li > a { color: #333 !important }
+}
+@media only screen and (max-width:480px) { 
+    .menu-top2 { background-color: #fff }
+    .navbar-default .navbar-nav > li > a { color: #333 !important }
+}
+@media only screen and (max-width:360px) { 
+    .menu-top2 { background-color: #fff }
+    .navbar-default .navbar-nav > li > a { color: #333 !important }
+}
+@media only screen and (max-width:320px) { 
+    .menu-top2 { background-color: #fff }
+    .navbar-default .navbar-nav > li > a { color: #333 !important }
+}
+
 .navbar-default.menu-shrink { color: #55acef !important }
 .navbar-default.menu-shrink li a { color: #323A45 !important }
 .navbar-default .navbar-toggle {
@@ -326,7 +369,8 @@ height: 100%;
 }
 .hero-text h2 {
     color: #fff;
-    
+    font-size: 90px;
+    line-height: 95%;
     
 }
 @media only screen and (max-width:768px) { 
@@ -351,6 +395,35 @@ height: 100%;
     list-style: none;
     text-align: center;
 }
+.hero-text2 h2 {
+    color: #fff;
+    font-size: 75px;
+    line-height: 130%;
+    
+}
+@media only screen and (max-width:768px) { 
+    .hero-text h2 { font-size: 60px }
+}
+@media only screen and (max-width:480px) { 
+    .hero-text h2 {
+        font-size: 45px;
+        line-height: 54px;
+    }
+}
+@media only screen and (max-width:360px) { 
+    .hero-text h2 {
+        font-size: 43px;
+        line-height: 45px;
+    }
+}
+.header_social { margin-top: 30px }
+.header_social ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
 .header_social ul li { display: inline-block }
 .header_social ul li { }
 .header_social ul li a {
@@ -429,6 +502,22 @@ height: 100%;
     -webkit-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
 }
+.single_about2 {
+    padding: 45px;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+.single_about3 {
+    padding: 70px;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+.single_about4 {
+    padding: 70px;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    text-align: center;
+}
 .single_about i {
 border-radius: 100px;
 color: #fff;
@@ -451,6 +540,15 @@ transition: all 0.4s ease 0s;
     font-size: 22px;
     line-height: 30px;
     text-align: center;
+}
+.single_about1 h1 {
+    color: #616f6e;
+    margin-bottom:0;
+    font-size: 22px;
+    line-height: 32px;
+    text-align: justify;
+    padding-left: 130px;
+    padding-right: 130px;
 }
 @media only screen and (max-width:768px) { 
     .single_about h1 { text-align: center }
@@ -513,7 +611,7 @@ width: 100px;
 .about_single h4 {
     margin-top: 10px;
     font-weight: 600;
-    color: #34454d;
+    color: #616f6e;
 }
 @media only screen and (max-width:480px) { 
     .about_single { margin-bottom: 20px }
