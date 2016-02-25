@@ -1467,7 +1467,8 @@ color: #fff;
 }
 .benefits-info{
 	display: inline-block;
-        width: 400px;
+        width: 600px;
+        text-align: left;
 }
 /*
  * ----------------------------------------------------------------------------------------
