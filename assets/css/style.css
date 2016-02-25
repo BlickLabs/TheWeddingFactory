@@ -1465,8 +1465,68 @@ color: #fff;
 	display: inline-block;
 	margin-top: -10px;
 }
+
+@media only screen and (max-width:768px) { 
+    .arrow-icon { font-size: 60px }
+}
+@media only screen and (max-width:480px) { 
+    .arrow-icon {
+        width: 60px;
+	height: auto;
+	display: inline-block;
+
+    }
+}
+@media only screen and (max-width:360px) { 
+    .arrow-icon {
+       width: 60px;
+	height: auto;
+	display: inline-block;
+	
+    }
+}
+
 .benefits-info{
 	display: inline-block;
         width: 600px;
         text-align: left;
+}
+
+
+@media only screen and (max-width:768px) { 
+    .benefits-info { 
+        display: inline-block;
+        width: 200px;
+       text-align: left;
+    }
+}
+@media only screen and (max-width:480px) { 
+    .benefits-info {
+       display: inline-block;
+        width: 200px;
+        text-align: left;
+    }
+}
+@media only screen and (max-width:360px) { 
+    .benefits-info {
+        display: inline-block;
+        width: 200px;
+        text-align: left;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-centered .navbar-nav {
+        float: none;
+        text-align: center;
+    }
+    .navbar-centered .navbar-nav > li {
+        float: none;
+    }
+    .navbar-centered .nav > li {
+        display: inline;
+    }
+    .navbar-centered .nav > li > a {
+        display: inline-block;
+    }
 }
