@@ -73,5 +73,13 @@ and open the template in the editor.
    
   }
  
- 
+     @font-face {
+  font-family: "Avenir-Roman";
+  src: url("../fonts/AvenirLTStd-Roman.otf");
+  }
+    
+    .Avenir-Roman2 {
+  font-family: Avenir-Roman;
+  color: #616f6e;
+  }
  
