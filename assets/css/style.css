@@ -72,6 +72,7 @@ ul,
 li {
     margin: 0;
     padding: 0;
+    line-height:45px;
 }
 
 
@@ -119,7 +120,7 @@ fieldset {
 /*START SECTION TITLE DESIGN*/
 .section-title { margin-bottom: 50px }
 .section-title h1 {
-    text-transform: uppercase;
+  
     font-size: 40px;
 }
 
@@ -332,7 +333,7 @@ transition: all 0.4s ease 0s;
 }
 .navbar-default.menu-shrink {
     padding: 10px 0;
-    background-color: #fff;
+    background-color: #f1e1b6 ;
     width: 100%;
     box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.1);
 }
@@ -352,13 +353,14 @@ transition: all 0.4s ease 0s;
 }
 //menu top 2
 .menu-top2 {
-    background-color: transparent;
+    background-color: #f1e1b6 !important;
     width: 100%;
 }
 
 .menu-top2 li a {
-    color: #000 !important;
+    color: #616f6e !important;
     text-transform: uppercase;
+    line-height: 15px;
 }
 .menu-top2 {
     color: #f3f3f3 !important;
