@@ -166,6 +166,31 @@ fieldset {
         line-height: 55px;
 	text-align: center; }
 }
+//sectio title 4
+.section-title4 { margin-bottom: 50px }
+.section-title4 h1 {
+    line-height: 75px;
+    font-size: 40px;
+}
+@media only screen and (max-width:768px) { 
+    .section-title4 h1 { text-align: center }
+}
+@media only screen and (max-width:480px) { 
+    .section-title4 h1 { 
+	font-size: 15px;
+	text-align: center; }
+}
+@media only screen and (max-width:360px) { 
+    .section-title4 h1 { 
+	font-size: 25px;
+        line-height: 55px;
+	text-align: center; }
+}
+@media only screen and (max-width:320px) { 
+    .section-title4 h1 {
+        line-height: 55px;
+	text-align: center; }
+}
 //sectio title 3
 .section-title3 { margin-bottom: 50px }
 .section-title3 h1 {
@@ -1385,19 +1410,22 @@ input.form-control {
     color: #222;
     height: 45px;
     box-shadow: none;
+    
+    
 }
 textarea.form-control {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
     border: 1px solid #e8e8e9;
-    color: #222;
+    color: #01B59A;
     border-radius: 15px !important; 
     box-shadow: none;
     
 }
 .form-control:focus {
-    border: 1px solid #000;
+    border: 1px solid transparent;
     box-shadow: none;
     outline: 0 none;
+    
 }
 .btn-theme-bg i { margin-right: 5px }
 /*
