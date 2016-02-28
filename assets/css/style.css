@@ -125,11 +125,14 @@ fieldset {
 }
 
 @media only screen and (max-width:768px) { 
-    .section-title h1 { text-align: center }
+    .section-title h1 { 
+        text-align: center;
+        font-size: 30px;
+    }
 }
 @media only screen and (max-width:480px) { 
     .section-title h1 { 
-	font-size: 15px;
+	font-size: 30px;
 	text-align: center; }
 }
 @media only screen and (max-width:360px) { 
@@ -294,25 +297,25 @@ transition: all 0.4s ease 0s;
     margin-bottom: 0;
     width: 100%;
     padding: 20px 0;
-    background: #fff;
+    background: #f1e1b6;
     transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
     -ms-transition: all 0.4s ease-in-out;
 }
-.navbar-default .navbar-nav>.active>a,
+/*.navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
-    color: #55acef !important;
+    color:red !important;
     background-color: transparent;
-}
-.navbar-default .navbar-nav>.open>a,
+}*/
+/*.navbar-default .navbar-nav>.open>a,
 .navbar-default .navbar-nav>.open>a:hover,
 .navbar-default .navbar-nav>.open>a:focus {
     color: #55acef !important;
     background-color: transparent;
-}
+}*/
 .navbar-brand { padding: 0px }
 .navbar-brand img {
     height: 100px;
@@ -341,20 +344,20 @@ transition: all 0.4s ease 0s;
 }
 
 @media only screen and (max-width:768px) { 
-    .menu-top { background-color: #fff }
-    .navbar-default .navbar-nav > li > a { color: #333 !important }
+    .menu-top { background-color: #f1e1b6 }
+    .navbar-default .navbar-nav > li > a { color: #616f6e !important }
 }
 @media only screen and (max-width:480px) { 
-    .menu-top { background-color: #fff }
-    .navbar-default .navbar-nav > li > a { color: #333 !important }
+    .menu-top { background-color: #f1e1b6 }
+    .navbar-default .navbar-nav > li > a { color: #616f6e !important }
 }
 @media only screen and (max-width:360px) { 
-    .menu-top { background-color: #fff }
-    .navbar-default .navbar-nav > li > a { color: #333 !important }
+    .menu-top { background-color: #f1e1b6 }
+    .navbar-default .navbar-nav > li > a { color: #616f6e !important }
 }
 @media only screen and (max-width:320px) { 
-    .menu-top { background-color: #fff }
-    .navbar-default .navbar-nav > li > a { color: #333 !important }
+    .menu-top { background-color: #f1e1b6f }
+    .navbar-default .navbar-nav > li > a { color: #616f6e !important }
 }
 .navbar-default.menu-shrink {
     padding: 10px 0;
@@ -367,7 +370,7 @@ transition: all 0.4s ease 0s;
     text-transform: uppercase;
 }
 .menu-top {
-    color: #f3f3f3 !important;
+    color: red !important;
     text-transform: uppercase;
 }
 @media only screen and (max-width:480px) { 
@@ -398,31 +401,31 @@ transition: all 0.4s ease 0s;
     }
 }
 @media only screen and (max-width:768px) { 
-    .menu-top2 { background-color: #fff }
-    .navbar-default .navbar-nav > li > a { color: #333 !important }
+    .menu-top2 { background-color: #f1e1b6 }
+    .navbar-default .navbar-nav > li > a { color: #616f6e !important }
 }
 @media only screen and (max-width:480px) { 
-    .menu-top2 { background-color: #fff }
-    .navbar-default .navbar-nav > li > a { color: #333 !important }
+    .menu-top2 { background-color: #f1e1b6 }
+    .navbar-default .navbar-nav > li > a { color: #616f6e !important }
 }
 @media only screen and (max-width:360px) { 
-    .menu-top2 { background-color: #fff }
-    .navbar-default .navbar-nav > li > a { color: #333 !important }
+    .menu-top2 { background-color: #f1e1b6 }
+    .navbar-default .navbar-nav > li > a { color: #616f6e !important }
 }
 @media only screen and (max-width:320px) { 
-    .menu-top2 { background-color: #fff }
-    .navbar-default .navbar-nav > li > a { color: #333 !important }
+    .menu-top2 { background-color:#f1e1b6 }
+    .navbar-default .navbar-nav > li > a { color: #616f6e !important }
 }
 
-.navbar-default.menu-shrink { color: #55acef !important }
-.navbar-default.menu-shrink li a { color: #323A45 !important }
+.navbar-default.menu-shrink { color: #616f6e !important }
+.navbar-default.menu-shrink li a { color: #616f6e !important }
 .navbar-default .navbar-toggle {
-    background: #fff none repeat scroll 0 0;
-    border-color: #fff;
+    background:  #efefef none repeat scroll 0 0;
+    border-color: #efefef;
 }
 .navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus { background-color: #fff }
-.navbar-default .navbar-toggle .icon-bar { background-color: #55acef }
+.navbar-default .navbar-toggle:focus { background-color:  #efefef }
+.navbar-default .navbar-toggle .icon-bar { background-color:  #555e5d }
 /*
 * ----------------------------------------------------------------------------------------
 * 02.END BOOTSTRAP NAVIGATION OVERRIDES
@@ -573,9 +576,10 @@ height: 100%;
  * ----------------------------------------------------------------------------------------
  */
 .single_about {
-    padding: 70px 0 85px;
+    padding: 70px 85px;
     -webkit-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
+    
 }
 .single_about2 {
     padding: 45px;
@@ -600,7 +604,7 @@ font-size: 30px;
 padding-bottom: 25px;
 transition: all 0.4s ease 0s;
 }
-.single_about_one { background: #2F9AEA }
+.single_about_one { background: transparent }
 .single_about_two { background: #54ABEE }
 .single_about_three { background: #7BBEF2 }
 .single_about h4 {
@@ -615,33 +619,79 @@ transition: all 0.4s ease 0s;
     font-size: 22px;
     line-height: 30px;
     text-align: center;
+    padding-left: 262px;
+    padding-right: 262px;
 }
 @media only screen and (max-width:768px) { 
-    .single_about h1 { text-align: center }
+    .single_about h1 { 
+        text-align: justify;
+        padding-left: 1px;
+        padding-right: 1px;
+    }
 }
 @media only screen and (max-width:480px) { 
     .single_about h1 { 
 	font-size: 15px;
-	text-align: justify; }
+	text-align: justify;
+        color: #616f6e;
+         padding-left: 1px;
+        padding-right: 1px;
+    }
 }
 @media only screen and (max-width:360px) { 
     .single_about h1 { 
-        color: #fff;
-        font-size: 20px;
+        color: #616f6e;
+        font-size: 17px;
         line-height: 20px;
         text-align: justify;
-        text-justify: inter-word;
+        padding-left: calc;
+        padding-right: calc;
+        
        
     }
 }
 @media only screen and (max-width:320px) { 
     .single_about h1 { 
-	color: #fff;
-        font-size: 20px;
+	color: #616f6e ;
+        font-size: 18px;
         line-height: 20px;
-        text-align: justify;
-        text-justify: inter-word;
+        
+        padding-left: 1px;
+        padding-right: 1px;
     }
+}
+//section anillo
+@media only screen and (max-width:768px) { 
+    .single_about {
+    padding: 50px 55px;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    
+}
+}
+@media only screen and (max-width:480px) { 
+    .single_about {
+    padding: 40px 45px;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    
+}
+}
+@media only screen and (max-width:360px) { 
+   .single_about {
+    padding: 50px 55px;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    
+}
+}
+@media only screen and (max-width:320px) { 
+   .single_about {
+    padding: 40px 45px;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    
+}
 }
 
 
@@ -661,7 +711,10 @@ transition: all 0.4s ease 0s;
     padding-right: 130px;
 }
 @media only screen and (max-width:768px) { 
-    .single_about1 h1 { text-align: center }
+    .single_about1 h1 { 
+        text-align: center;
+        color: #616f6e;
+    }
 }
 @media only screen and (max-width:480px) { 
     .single_about1 h1 { 
@@ -1416,7 +1469,7 @@ input.form-control {
 textarea.form-control {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
     border: 1px solid #e8e8e9;
-    color: #01B59A;
+    color: #222;
     border-radius: 15px !important; 
     box-shadow: none;
     
@@ -1549,14 +1602,45 @@ color: #fff;
     .navbar-centered .navbar-nav {
         float: none;
         text-align: center;
+        
     }
     .navbar-centered .navbar-nav > li {
         float: none;
+        
     }
     .navbar-centered .nav > li {
         display: inline;
     }
     .navbar-centered .nav > li > a {
         display: inline-block;
+        
+    }
+}
+
+.header .main-nav .nav .nav-item.active > a {
+  color: #71c4e0;
+  background: none;
+  font-weight: bold;
+}
+
+@media only screen and (max-width:768px) { 
+    
+    .img-footer{ 
+        padding-left: 40px;
+    }
+}
+@media only screen and (max-width:480px) { 
+     .img-footer{ 
+        padding-left: 40px;
+    }
+}
+@media only screen and (max-width:360px) { 
+    .img-footer{ 
+        padding-left: 40px;
+    }
+}
+@media only screen and (max-width:320px) { 
+    .img-footer{ 
+        padding-left: 40px;
     }
 }
