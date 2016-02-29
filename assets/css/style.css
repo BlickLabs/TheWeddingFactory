@@ -297,7 +297,7 @@ transition: all 0.4s ease 0s;
     margin-bottom: 0;
     width: 100%;
     padding: 20px 0;
-    background: #f1e1b6;
+    background: #fff7ea;
     transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
@@ -344,24 +344,24 @@ transition: all 0.4s ease 0s;
 }
 
 @media only screen and (max-width:768px) { 
-    .menu-top { background-color: #f1e1b6 }
+    .menu-top { background-color: #fff }
     .navbar-default .navbar-nav > li > a { color: #616f6e !important }
 }
 @media only screen and (max-width:480px) { 
-    .menu-top { background-color: #f1e1b6 }
+    .menu-top { background-color: #fff }
     .navbar-default .navbar-nav > li > a { color: #616f6e !important }
 }
 @media only screen and (max-width:360px) { 
-    .menu-top { background-color: #f1e1b6 }
+    .menu-top { background-color: #fff }
     .navbar-default .navbar-nav > li > a { color: #616f6e !important }
 }
 @media only screen and (max-width:320px) { 
-    .menu-top { background-color: #f1e1b6f }
+    .menu-top { background-color: #fff }
     .navbar-default .navbar-nav > li > a { color: #616f6e !important }
 }
 .navbar-default.menu-shrink {
     padding: 10px 0;
-    background-color: #f1e1b6 ;
+    background-color: #fff ;
     width: 100%;
     box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.1);
 }
@@ -401,19 +401,19 @@ transition: all 0.4s ease 0s;
     }
 }
 @media only screen and (max-width:768px) { 
-    .menu-top2 { background-color: #f1e1b6 }
+    .menu-top2 { background-color: #fff7ea }
     .navbar-default .navbar-nav > li > a { color: #616f6e !important }
 }
 @media only screen and (max-width:480px) { 
-    .menu-top2 { background-color: #f1e1b6 }
+    .menu-top2 { background-color: #fff7ea }
     .navbar-default .navbar-nav > li > a { color: #616f6e !important }
 }
 @media only screen and (max-width:360px) { 
-    .menu-top2 { background-color: #f1e1b6 }
+    .menu-top2 { background-color: #fff7ea }
     .navbar-default .navbar-nav > li > a { color: #616f6e !important }
 }
 @media only screen and (max-width:320px) { 
-    .menu-top2 { background-color:#f1e1b6 }
+    .menu-top2 { background-color:#fff7ea }
     .navbar-default .navbar-nav > li > a { color: #616f6e !important }
 }
 
@@ -1573,6 +1573,7 @@ color: #fff;
 	display: inline-block;
         width: 600px;
         text-align: left;
+        height: auto;
 }
 
 
@@ -1626,21 +1627,48 @@ color: #fff;
 @media only screen and (max-width:768px) { 
     
     .img-footer{ 
-        padding-left: 40px;
+        padding-left: 70px;
     }
 }
 @media only screen and (max-width:480px) { 
      .img-footer{ 
-        padding-left: 40px;
+        padding-left: 70px;
     }
 }
 @media only screen and (max-width:360px) { 
     .img-footer{ 
-        padding-left: 40px;
+        padding-left: 70px;
     }
 }
 @media only screen and (max-width:320px) { 
     .img-footer{ 
-        padding-left: 40px;
+        padding-left: 70px;
+    }
+}
+
+.single_about_contatc p {
+   
+    line-height:18px;
+}
+//contacto
+@media only screen and (max-width:768px) { 
+    
+    .separacion{ 
+        padding-top: 50px;
+    }
+}
+@media only screen and (max-width:480px) { 
+    .separacion{ 
+        padding-top: 50px;
+    }
+}
+@media only screen and (max-width:360px) { 
+    .separacion{ 
+        padding-top: 50px;
+    }
+}
+@media only screen and (max-width:320px) { 
+    .separacion{ 
+        padding-top: 50px;
     }
 }
