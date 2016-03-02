@@ -142,7 +142,7 @@
 
     <footer class="footer" style="background-color: #555e5d">
             <div class="container">
-                <div class="row center-block">
+                <div class="row center-block" id="row-footer">
                     <div class="col-md-12 text-center ">
                        <div class="footer-copyright wow fadeInUp " data-wow-duration="1s" data-wow-delay="0.6s" data-wow-offset="0">
                           <div class="col-sm-7">
@@ -182,7 +182,7 @@
     <script type="text/javascript" src="js/main.js"></script>
     <script>
     $(document).ready(function() {
-        $(".row").not("#row-1").hide();
+        $(".row").not("#row-1, #row-footer").hide();
         // $('#page-selection').bootpag({
         //             total: 4
         //         }).on("page", function(event, /* page number here */ num){
@@ -193,7 +193,7 @@
         $(".pagg").on('click', function(event) {
             var $data = $(this);
             $("#row-" + $data.attr("id")).show("slow");
-            $(".row").not('#row-' + $data.attr("id")).hide("slow");
+            $(".row").not('#row-footer, #row-' + $data.attr("id")).hide("slow");
         });
     });
     </script>
