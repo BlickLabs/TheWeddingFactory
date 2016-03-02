@@ -131,11 +131,9 @@
             </div> <!-- End Row -->
             <div id="page-selection">
               <ul class="pagination">
-                <li id="1" class="prev pagg"><a href="javascript:void(0);" style="color: #212121">«</a></li>
                 <li id="1" class="prev pagg"><a href="javascript:void(0);" style="color: #212121">1</a></li>
                 <li id="2" class="prev pagg"><a href="javascript:void(0);" style="color: #212121">2</a></li>
                 <li id="3" class="prev pagg"><a href="javascript:void(0);" style="color: #212121">3</a></li>
-                <li id="3" class="next pagg"><a href="javascript:void(0);" style="color: #212121">»</a></li>
                </ul>
             </div>
     </section>
