@@ -109,14 +109,9 @@
                     <div class="col-sm-4 col-md-4 col-lg-4 nopadding"> <!-- First Column -->
                         <div class="small-box">
                             <div class="hover-bg">
-                                <img src="<?php echo $path; ?>" alt="img" class="img-responsive img-standar">
-                                <div class="hover-text animated">
-                                    <div class="ptitle">
-                                        <a href="<?php echo $path; ?>" title="<?php echo $tittle; ?>" data-lightbox-gallery="gallery1"><h2><?php echo $tittle; ?></h2></a>
-                                    </div>
-                                    <p class="excerpt"><?php echo $short_description; ?> </p>
-                                    <a href="<?php echo $path; ?>" class="btn btn-default read-more-btn" title="<?php echo $tittle; ?>" data-lightbox-gallery="gallery1"><span class="fa fa-bars"></span>Ver más</a>
-                                </div>
+                                <a href="<?php echo $path; ?>" class="btn btn-default read-more-btn" title="<?php echo $tittle; ?>" data-lightbox-gallery="gallery1">
+                                  <img src="<?php echo $path; ?>" alt="img" class="img-responsive img-standar">
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -182,6 +177,7 @@
     <script type="text/javascript" src="js/jquery.bootpag.js"></script>
     <script type="text/javascript">
     $(document).ready(function() {
+        $("#row-*").not("#row-1")hide();
         $('#page-selection').bootpag({
                     total: 4
                 }).on("page", function(event, /* page number here */ num){
