@@ -131,11 +131,11 @@
             </div> <!-- End Row -->
             <div id="page-selection">
               <ul class="pagination bootpag">
-                <li data-lp="1" class="prev"><a href="javascript:void(0);">«</a></li>
-                <li data-lp="1"><a href="javascript:void(0);">1</a></li>
-                <li data-lp="2"><a href="javascript:void(0);">2</a></li>
-                <li data-lp="3"><a href="javascript:void(0);">3</a></li>
-               <li data-lp="3" class="next"><a href="javascript:void(0);">»</a></li></ul>
+                <li data-lp="1" id="1" class="prev pagg"><a href="javascript:void(0);">«</a></li>
+                <li data-lp="1" id="1" class="prev pagg"><a href="javascript:void(0);">1</a></li>
+                <li data-lp="2" id="2" class="prev pagg"><a href="javascript:void(0);">2</a></li>
+                <li data-lp="3" id="3" class="prev pagg"><a href="javascript:void(0);">3</a></li>
+               <li data-lp="3" id="3" class="next pagg"><a href="javascript:void(0);">»</a></li></ul>
             </div>
         </div> <!-- End Container -->
         <div class="clearfix"></div>
@@ -192,10 +192,10 @@
         //              $(".row").not('#row-' + num).hide("slow");
 
         //         });
-        $("data-lp").on('click', function(event) {
+        $(".pagg").on('click', function(event) {
             var $data = $(this);
-            $("#row-" + $data).show("slow");
-            $(".row").not('#row-' + $data).hide("slow");
+            $("#row-" + $data.attr("id")).show("slow");
+            $(".row").not('#row-' + $data.attr("id")).hide("slow");
         });
     });
     </script>
