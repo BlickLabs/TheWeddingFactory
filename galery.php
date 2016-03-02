@@ -60,35 +60,35 @@
 
     <!-- Off Canvas Navigation
     ================================================== -->
-   <div class="navbar navbar-default navbar-fixed-top menu-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                                      
-            </div>
-            <div class="navbar-collapse collapse navbar-centered ">
-               <ul class="nav navbar-nav" >
-                   
-                   <li><a href="quienes_somos.html" class="Montserrat-Regular">Quiénes Somos</a></li>
-                   <li><a href="#services" class="Montserrat-Regular">Servicios</a></li>
-                   <li><a href="galery.php" class="Montserrat-Regular">Galería</a></li>
-                   <li><a href="#contact" class="Montserrat-Regular">Contacto</a></li>
-               </ul>
-           </div> 
-        </div><!--- END CONTAINER -->
-    </div> 
+   <div class="navbar navbar-default navbar-fixed-top menu-top2" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                                              
+                    </div>
+                    <div class="navbar-collapse collapse navbar-centered ">
+                                               <ul class="nav navbar-nav" >
+                                                   <li><a href="index.html" class="Montserrat-Regular">Inicio</a></li>
+                                                   <li><a href="quienes_somos.html" class="Montserrat-Regular">Quiénes Somos</a></li>
+                                                   <li><a href="index.html#services" class="Montserrat-Regular">Servicios</a></li>
+                                                   <li><a href="#works" class="Montserrat-Regular">Galería</a></li>
+                                                   <li><a href="index.html#contact" class="Montserrat-Regular">Contacto</a></li>
+                                               </ul>
+                                           </div> 
+                </div><!--- END CONTAINER -->
+            </div> 
 
 
     <!-- Hero Slider
     ================================================== -->
     <!-- Portfolio Section
     ================================================== -->
-    <section id="portfolio"> 
+    <section id="portfolio" style="padding-top: 80px;"> 
         <div class="container-fluid"> <!-- Start Container -->
             <div class="row"> <!-- Start Row -->
                 <?php
@@ -100,7 +100,6 @@
                         $short_description = $value['short_description'];
                         $img_details = json_encode($value);
                         $RequestText = urlencode($img_details);
-                        if($count%3 == 0){
                 ?>
                     <div class="col-sm-4 col-md-4 col-lg-4 nopadding"> <!-- First Column -->
                         <div class="small-box">
@@ -114,32 +113,8 @@
                                     <a href="<?php echo $path; ?>" class="btn btn-default read-more-btn" title="<?php echo $tittle; ?>" data-lightbox-gallery="gallery1"><span class="fa fa-bars"></span>Ver más</a>
                                 </div>
                             </div>
-                        </div> 
-                        <?php  
-                                }
-                                else if($count%3 != 0)
-                                {
-                        ?>
-                        <div class="small-box">
-                            <div class="hover-bg">
-                                <img src="<?php echo $path; ?>" alt="img" class="img-responsive img-standar">
-                                <div class="hover-text animated">
-                                    <div class="ptitle">
-                                        <a href="<?php echo $path; ?>" title="<?php echo $tittle; ?>" data-lightbox-gallery="gallery1"><h2><?php echo $tittle; ?></h2></a>
-                                    </div>
-                                    <p class="excerpt"><?php echo $short_description; ?> </p>
-                                    <a href="<?php echo $path; ?>" title="<?php echo $tittle; ?>" data-lightbox-gallery="gallery1" class="btn btn-default read-more-btn"><span class="fa fa-bars"></span>Ver más</a>
-                                </div>
-                            </div>
                         </div>
-                        <?php  
-                            }
-                        ?>
                     </div>
-                        <?php
-                            $count++;
-                            }
-                        ?> 
             </div> <!-- End Row -->
         </div> <!-- End Container -->
         <div class="clearfix"></div>
