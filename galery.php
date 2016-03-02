@@ -189,7 +189,7 @@
                     total: 4
                 }).on("page", function(event, /* page number here */ num){
                      $("#row-" + num).show("slow");
-                     $(".row").not('#row-' + num)hide("slow");
+                     $(".row").not('#row-' + num).hide("slow");
 
                 });
     });
