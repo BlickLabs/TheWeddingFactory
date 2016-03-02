@@ -137,8 +137,6 @@
                 <li data-lp="3" id="3" class="prev pagg"><a href="javascript:void(0);">3</a></li>
                <li data-lp="3" id="3" class="next pagg"><a href="javascript:void(0);">»</a></li></ul>
             </div>
-        </div> <!-- End Container -->
-        <div class="clearfix"></div>
     </section>
 
     <footer class="footer" style="background-color: #555e5d">
