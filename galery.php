@@ -129,7 +129,14 @@
                        }
                 ?>
             </div> <!-- End Row -->
-            <div id="page-selection"></div>
+            <div id="page-selection">
+              <ul class="pagination bootpag">
+                <li data-lp="1" class="prev"><a href="javascript:void(0);">«</a></li>
+                <li data-lp="1"><a href="javascript:void(0);">1</a></li>
+                <li data-lp="2"><a href="javascript:void(0);">2</a></li>
+                <li data-lp="3"><a href="javascript:void(0);">3</a></li>
+               <li data-lp="3" class="next"><a href="javascript:void(0);">»</a></li></ul>
+            </div>
         </div> <!-- End Container -->
         <div class="clearfix"></div>
     </section>
@@ -177,7 +184,7 @@
     <script type="text/javascript" src="js/jquery.bootpag.js"></script>
     <script type="text/javascript">
     $(document).ready(function() {
-        $("#row-*").not("#row-1")hide();
+        $(".row").not("#row-1")hide();
         $('#page-selection').bootpag({
                     total: 4
                 }).on("page", function(event, /* page number here */ num){
