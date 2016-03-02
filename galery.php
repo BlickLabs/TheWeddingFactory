@@ -182,20 +182,20 @@
     ================================================== -->
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/jquery.bootpag.js"></script>
-    <script type="text/javascript">
+    <script>
     $(document).ready(function() {
         $(".row").not("#row-1").hide();
-        $('#page-selection').bootpag({
-                    total: 4
-                }).on("page", function(event, /* page number here */ num){
-                     $("#row-" + num).show("slow");
-                     $(".row").not('#row-' + num).hide("slow");
+        // $('#page-selection').bootpag({
+        //             total: 4
+        //         }).on("page", function(event, /* page number here */ num){
+        //              $("#row-" + num).show("slow");
+        //              $(".row").not('#row-' + num).hide("slow");
 
-                });
+        //         });
         $("data-lp").on('click', function(event) {
             var $data = $(this);
             $("#row-" + $data).show("slow");
-            $(".row").not('#row-' + num).hide("slow");
+            $(".row").not('#row-' + $data).hide("slow");
         });
     });
     </script>
