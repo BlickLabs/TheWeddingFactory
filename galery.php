@@ -122,7 +122,7 @@
                                                   $short_description = $value['short_description'];
                                                   $img_details = json_encode($value);
                                                   $RequestText = urlencode($img_details);
-                                                }
+                                                
                           ?>
                   <div class="col-sm-4 col-md-4 col-lg-4 nopadding"> <!-- First Column -->
                       <div class="small-box">
