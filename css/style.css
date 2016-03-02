@@ -355,7 +355,7 @@ div#main-text{
 .small-box img.img-responsive {
     width: -webkit-calc(100% + 80px);
     width: calc(100% + 80px);
-    max-width: 100%;
+    max-width: 120%;
     -webkit-backface-visibility:hidden;
     transform: translateX(-20px) translateY(-20px);
     -webkit-transform: translateX(-20px) translateY(-20px);
@@ -365,7 +365,7 @@ div#main-text{
 }
 
 .large-box img.img-responsive {
-    max-width: 100%;
+    max-width: 120%;
     -webkit-backface-visibility:hidden;
     transform: translateX(-50px) translateY(-50px);
     -webkit-transform: translateX(-50px) translateY(-50px);
