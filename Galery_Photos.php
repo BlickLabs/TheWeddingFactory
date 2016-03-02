@@ -17,7 +17,7 @@
                 include "header.php";
                 session_start();
                     if (!isset($_SESSION['user_name'])) {
-                        header("Location: index.php");
+                        header("Location: login.php");
                     }
             ?>
             <p>
@@ -39,7 +39,7 @@
                 <tbody>
                     <?php
                         $res = $mysqli->query("SELECT * FROM content");
-                        $mysqli->close();
+                        
                         while ($row = $res->fetch_assoc()):
                     ?>
                         <tr>
@@ -67,9 +67,7 @@
                             <td>
                                 <a class="btn btn-lg btn-danger" data-toggle="modal" data-target="#basicModal" ><span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Borrar</a>
                             </td>
-                            
-                        </tr>
-                    <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+                            <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -77,7 +75,7 @@
                                     <h4 class="modal-title" id="myModalLabel">Atención</h4>
                                 </div>
                                 <div class="modal-body">
-                                    <h3>¿Estas seguro de eliminar el contenido?</h3>
+                                    <h3>¿Estas seguro de eliminar el contenido? <?php echo $row['id_content'] ?></h3>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-default" data-dismiss="modal">Cerrrar</button>
@@ -85,9 +83,12 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>  
+                        </tr>
+                    
                         <?php
                             endwhile;
+                            $mysqli->close();
                         ?>
                 </tbody>
             </table>	    

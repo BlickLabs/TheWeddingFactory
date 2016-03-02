@@ -3,7 +3,7 @@
     error_reporting(E_ALL);
     session_start();
     if (!isset($_SESSION['user_name'])) {
-        header("Location: index.php");
+        header("Location: login.php");
     }       
     $mail = $_SESSION['user_name'];
     $query2 = "SELECT nombre FROM Users WHERE user='$mail'";

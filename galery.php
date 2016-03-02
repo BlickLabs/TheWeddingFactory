@@ -129,7 +129,7 @@
                        }
                 ?>
             </div> <!-- End Row -->
-            <div id="page-selection">
+            <div id="page-selection" class="navbar-centered">
               <ul class="pagination">
                 <li id="1" class="prev pagg"><a href="javascript:void(0);" style="color: #212121">1</a></li>
                 <li id="2" class="prev pagg"><a href="javascript:void(0);" style="color: #212121">2</a></li>

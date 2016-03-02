@@ -4,7 +4,7 @@
     include "header.php";
     session_start();
     if (!isset($_SESSION['user_name'])) {
-        header("Location: index.php");
+        header("Location: login.php");
     }
     $res = $mysqli->query("SELECT id_content ,route FROM content WHERE id_content=" . $_GET['u']);
     $row = $res->fetch_assoc();

@@ -4,7 +4,7 @@
     header("Content-Type: text/html;charset=utf-8");
     session_start();
     if (!isset($_SESSION['user_name'])) {
-    header("Location: index.php");
+    header("Location: login.php");
     }
 if (isset($_POST['bts'])):
     if ($_POST['name_galery'] != null && $_POST['short_description'] != null && $_POST['status'] != null && $_POST['section'] != null) {

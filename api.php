@@ -1,14 +1,13 @@
 <?php
 include "config.php";
-header("Content-Type: application/json; charset=UTF-8");
+//header("Content-Type: application/json; charset=UTF-8");
 error_reporting(0);
-$id = mysql_real_escape_string($_GET["id"]);
+$id = mysql_real_escape_string(1);
 $st = mysql_real_escape_string($_GET["st"]);
 $sc = mysql_real_escape_string($_GET["sc"]);
 //query only by id
 if ($id!=null && empty($st) && empty($sc)) {
-    echo 'by id';
-    echo $st;
+   
     $result = $mysqli->query("SELECT id_galery,title_galery,short_description,long_description,creation_date,modification_date, "
             . "status FROM galery WHERE id_galery = '" . $id . "'");
     while ($row = $result->fetch_array(MYSQLI_ASSOC)) {
@@ -39,7 +38,7 @@ if ($id!=null && empty($st) && empty($sc)) {
         array_push($response['galery']['images'], $partialImage);
     }
     $json2 = json_encode($response['galery']);
-    echo $json2;
+    
 }   //query only by id and status
     elseif($id!=null && $st!=null && empty ($sc)) {
     echo 'by id and status';

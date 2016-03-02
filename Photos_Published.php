@@ -15,7 +15,7 @@
                     include "config.php";
                     session_start();
                     if (!isset($_SESSION['user_name'])) {
-                        header("Location: index.php");
+                        header("Location: login.php");
                     }
                     $query = "SELECT * FROM content";
                     $comprobar = mysqli_query($mysqli, $query)or die(mysqli_error());
