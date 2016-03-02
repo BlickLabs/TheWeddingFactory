@@ -92,10 +92,11 @@
         <div class="container-fluid"> <!-- Start Container -->
             <div class="row"> <!-- Start Row -->
                 <?php
-                    $json = json_decode($json2, true); 
-                    foreach ($json['images'] as $value) {
+                    include "api.php";
+                        $json = json_decode($json2, true); 
+                        foreach ($json['images'] as $value) {
                         $path = $value['path'];
-                        $tittle = $value['title'];
+                        $tittle = $value['tittle'];
                         $short_description = $value['short_description'];
                         $img_details = json_encode($value);
                         $RequestText = urlencode($img_details);
@@ -148,18 +149,18 @@
             <div class="container">
                 <div class="row center-block">
                     <div class="col-md-12 text-center ">
-                        <div class="footer-copyright wow fadeInUp " data-wow-duration="1s" data-wow-delay="0.6s" data-wow-offset="0">
-                            <div class="col-sm-7">
-                                    <div class="form-group col-sm-6"></div>
-                                    <img src="img/logo_2.png" style="height: 200px;float: right;position: static">
-                            </div>
-                            <div class=" form-group col-sm-5 center-block img-footer" style="text-align: left;margin-top: 50px;" >
-                                   <h4 style="color: #fff;margin-bottom:-4px" class="center-block Avenir-Roman">Síguenos en:</h4>
-                                    <img src="img/facebook.png" style="height: 67px;margin-left:-16px;margin-right:-26px" >
-                                    <img src="img/instagram.png" style="height: 67px;margin-right: -26px;" >
-                                    <img src="img/twitter.png" style="height: 67px;">     
-                            </div>
-                        </div>
+                       <div class="footer-copyright wow fadeInUp " data-wow-duration="1s" data-wow-delay="0.6s" data-wow-offset="0">
+                                                <div class="col-sm-7">
+                                                    <div class="form-group col-sm-6 "></div>
+                                                    <a href="index.html"><img src="img/logo_2.png" style="height: 140px;float: right;" class="logo-footer"></a>
+                                                </div>
+                                               <div class=" form-group col-sm-5 center-block img-footer" style="text-align: left;margin-top: 50px;" >
+                                                      <h4 style="color: #fff;margin-bottom:-4px" class="center-block Avenir-Roman siguenos">Síguenos en:</h4>
+                                                    <img src="img/facebook.png" style="height: 67px;margin-left:-16px;margin-right:-26px" >
+                                                    <img src="img/instagram.png" style="height: 67px;margin-right: -26px;" >
+                                                    <img src="img/twitter.png" style="height: 67px;">     
+                                                </div>
+                                            </div> 
                     </div>
                         
                 </div>

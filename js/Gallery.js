@@ -6,6 +6,6 @@ document.jQuery(document).ready(function($) {
       document.getElementById("demo").innerHTML = xhttp.responseText;
     }
   };
-  xhttp.open("GET", "url/api.php?id=3", true);
+  xhttp.open("GET", "url/api.php?id=18", true);
   xhttp.send();
 });
