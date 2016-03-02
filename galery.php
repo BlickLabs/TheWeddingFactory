@@ -192,6 +192,11 @@
                      $(".row").not('#row-' + num).hide("slow");
 
                 });
+        $("data-lp").on('click', function(event) {
+            var $data = $(this);
+            $("#row-" + $data).show("slow");
+            $(".row").not('#row-' + num).hide("slow");
+        });
     });
     </script>
 
