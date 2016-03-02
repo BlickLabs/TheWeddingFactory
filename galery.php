@@ -27,6 +27,8 @@
     ================================================== -->
     <link rel="stylesheet" type="text/css" href="font-awesome-4.2.0/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="css/jasny-bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/nivo-lightbox.css">
+    <link rel="stylesheet" type="text/css" href="../css/themes/default/default.css"
 
     <!-- Stylesheet
     ================================================== -->
