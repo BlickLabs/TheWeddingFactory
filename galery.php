@@ -115,6 +115,9 @@
                             </div>
                         </div>
                     </div>
+                <?php
+                        }
+                ?>
             </div> <!-- End Row -->
         </div> <!-- End Container -->
         <div class="clearfix"></div>
