@@ -92,7 +92,7 @@
     ================================================== -->
     <section id="portfolio" style="padding-top: 80px;"> 
         <div class="container-fluid"> <!-- Start Container -->
-            <div class="row pagg" id="row-1"> <!-- Start Row -->
+            <div class="row" id="row-1"> <!-- Start Row -->
                 <?php
                     include "api.php";
                         $count = 1;
@@ -184,7 +184,7 @@
     <script type="text/javascript" src="js/jquery.bootpag.js"></script>
     <script type="text/javascript">
     $(document).ready(function() {
-        $(".row").not("#row-1")hide();
+        $(".row").not("#row-1").hide();
         $('#page-selection').bootpag({
                     total: 4
                 }).on("page", function(event, /* page number here */ num){
