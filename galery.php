@@ -92,74 +92,49 @@
     ================================================== -->
     <section id="portfolio" style="padding-top: 80px;"> 
         <div class="container-fluid"> <!-- Start Container -->
-            <div class="row"> <!-- Start Row -->
+            <div class="row pagg" id="row-1"> <!-- Start Row -->
                 <?php
                     include "api.php";
-                        $url = "http://pruebasblick.hol.es/galery.php?id=1";
+                        $count = 1;
+                        $row = 2;
                         $json = json_decode($json2, true); 
-                        $num_total_registros = sizeof($json['images']);
-                        if ($num_total_registros > 0) {
-                          //Limito la busqueda
-                          $TAMANO_PAGINA = 9;
-                                $pagina = false;
-
-                          //examino la pagina a mostrar y el inicio del registro a mostrar
-                                if (isset($_GET["pagina"]))
-                                    $pagina = $_GET["pagina"];
-                                
-                          if (!$pagina) {
-                            $inicio = 0;
-                            $pagina = 1;
-                          }
-                          else {
-                            $inicio = ($pagina - 1) * $TAMANO_PAGINA;
-                          }
-                          //calculo el total de paginas
-                          $total_paginas = ceil($num_total_registros / $TAMANO_PAGINA);
-                          foreach ($json['images'] as $value) {
-                                                  $path = $value['path'];
-                                                  $tittle = $value['tittle'];
-                                                  $short_description = $value['short_description'];
-                                                  $img_details = json_encode($value);
-                                                  $RequestText = urlencode($img_details);
-                                                
-                          ?>
-                  <div class="col-sm-4 col-md-4 col-lg-4 nopadding"> <!-- First Column -->
-                      <div class="small-box">
-                          <div class="hover-bg">
-                              <img src="<?php echo $path; ?>" alt="img" class="img-responsive img-standar">
-                              <div class="hover-text animated">
-                                  <div class="ptitle">
-                                      <a href="<?php echo $path; ?>" title="<?php echo $tittle; ?>" data-lightbox-gallery="gallery1"><h2><?php echo $tittle; ?></h2></a>
-                                  </div>
-                                  <p class="excerpt"><?php echo $short_description; ?> </p>
-                                  <a href="<?php echo $path; ?>" class="btn btn-default read-more-btn" title="<?php echo $tittle; ?>" data-lightbox-gallery="gallery1"><span class="fa fa-bars"></span>Ver más</a>
-                              </div>
-                          </div>
+                        foreach ($json['images'] as $value) {
+                        $path = $value['path'];
+                        $tittle = $value['tittle'];
+                        $short_description = $value['short_description'];
+                        $img_details = json_encode($value);
+                        $RequestText = urlencode($img_details);
+                        if($count <=9){
+                ?>
+                    <div class="col-sm-4 col-md-4 col-lg-4 nopadding"> <!-- First Column -->
+                        <div class="small-box">
+                            <div class="hover-bg">
+                                <img src="<?php echo $path; ?>" alt="img" class="img-responsive img-standar">
+                                <div class="hover-text animated">
+                                    <div class="ptitle">
+                                        <a href="<?php echo $path; ?>" title="<?php echo $tittle; ?>" data-lightbox-gallery="gallery1"><h2><?php echo $tittle; ?></h2></a>
+                                    </div>
+                                    <p class="excerpt"><?php echo $short_description; ?> </p>
+                                    <a href="<?php echo $path; ?>" class="btn btn-default read-more-btn" title="<?php echo $tittle; ?>" data-lightbox-gallery="gallery1"><span class="fa fa-bars"></span>Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <?php
+                       $count++;
+                       }
+                       else{
+                ?>
                       </div>
-                  </div>
-              <?php
-                      }
-                          if ($total_paginas > 1) {
-                            if ($pagina != 1)
-                              echo '<a href="'.$url.'?pagina='.($pagina-1).'"><img src="images/izq.gif" border="0"></a>';
-                            for ($i=1;$i<=$total_paginas;$i++) {
-                              if ($pagina == $i)
-                                //si muestro el �ndice de la p�gina actual, no coloco enlace
-                                echo $pagina;
-                              else
-                                //si el �ndice no corresponde con la p�gina mostrada actualmente,
-                                //coloco el enlace para ir a esa p�gina
-                                echo '  <a href="'.$url.'?pagina='.$i.'">'.$i.'</a>  ';
-                            }
-                            if ($pagina != $total_paginas)
-                              echo '<a href="'.$url.'?pagina='.($pagina+1).'"><img src="images/der.gif" border="0"></a>';
-                          }
-                          echo '</p>';
-                        }
-                        
+                      <div class="row" id="row-<?php echo $row; ?>">
+                <?php
+                       $count= 1;
+                       $row++;
+                       }
+                       }
                 ?>
             </div> <!-- End Row -->
+            <div id="page-selection"></div>
         </div> <!-- End Container -->
         <div class="clearfix"></div>
     </section>
@@ -204,6 +179,18 @@
     <!-- Custom Javascripts
     ================================================== -->
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/jquery.bootpag.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('#page-selection').bootpag({
+                    total: 4
+                }).on("page", function(event, /* page number here */ num){
+                     $("#row-" + num).show("slow");
+                     $(".row").not('#row-' + num)hide("slow");
+
+                });
+    });
+    </script>
 
   </body>
 </html>
