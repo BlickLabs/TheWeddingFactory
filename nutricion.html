@@ -54,7 +54,7 @@
                                                 <li><a href="index.html" class="Montserrat-Regular">Inicio</a></li>
                                                 <li><a href="quienes_somos.html" class="Montserrat-Regular">Quiénes Somos</a></li>
                                                 <li><a href="index.html#services" class="Montserrat-Regular">Servicios</a></li>
-                                                <li><a href="#works" class="Montserrat-Regular">Galería</a></li>
+                                                <li><a href="galery.php" class="Montserrat-Regular">Galería</a></li>
                                                 <li><a href="index.html#contact" class="Montserrat-Regular">Contacto</a></li>
                                             </ul>
                                         </div> 
@@ -188,6 +188,21 @@
 			});
 			/*End partner carousel*/
 		</script>
-		
+		<script type="text/javascript">
+		/*  Stellar for background scrolling  */
+		(function () {
+
+			if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			 
+			} else {
+				$(window).stellar({
+					horizontalScrolling: false,
+					responsive: true
+				});
+			}
+
+		}());
+		/* End Stellar for background scrolling  */
+		</script>		
     </body>
 </html>
