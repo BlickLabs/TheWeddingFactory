@@ -90,8 +90,12 @@
     ================================================== -->
     <!-- Portfolio Section
     ================================================== -->
-    <section id="portfolio" style="padding-top: 80px;"> 
+    <section id="portfolio" style="padding-top: 150px;"> 
+         <div class="section-title4 text-center wow zoomIn">
+                <h1 class="Shorelines" style="color: #616f6e;margin-bottom: 90px">Conoce nuestros eventos</h1>
+            </div>
         <div class="container-fluid"> <!-- Start Container -->
+           
             <div class="row" id="row-1"> <!-- Start Row -->
                 <?php
                     include "api.php";
