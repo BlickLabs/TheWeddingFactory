@@ -37,7 +37,7 @@
     <link rel="stylesheet" href="assets/css/animate.css">       
     <!-- Style CSS -->
     <link rel="stylesheet" href="assets/css/style.css"> 
-
+     <link rel="stylesheet" href="fonts/font-face.css"> 
     <!-- Google Fonts
     ================================================== -->
     <link href='http://fonts.googleapis.com/css?family=Great+Vibes&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -195,6 +195,31 @@
         });
     });
     </script>
+    <script type="text/javascript">
+			/*partner carousel*/
+			 $(".partner").owlCarousel({
+				  autoPlay: 3000, //Set AutoPlay to 3 seconds
+				  items : 4,
+				  itemsDesktop : [1199,3],
+				  itemsDesktopSmall : [979,3]
+			});
+			/*End partner carousel*/
+		</script>
+		<script type="text/javascript">
+		/*  Stellar for background scrolling  */
+		(function () {
 
+			if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			 
+			} else {
+				$(window).stellar({
+					horizontalScrolling: false,
+					responsive: true
+				});
+			}
+
+		}());
+		/* End Stellar for background scrolling  */
+		</script>		
   </body>
 </html>
