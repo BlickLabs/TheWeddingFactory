@@ -92,7 +92,7 @@
     ================================================== -->
     <section id="portfolio" > 
          <div class="section-title4 text-center wow zoomIn" style="padding-top: 150px;">
-                <h1 class="Shorelines" style="color: #616f6e;margin-bottom: 80px">Conoce &nbsp; nuestros &nbsp;eventos</h1>
+                <h1 class="Eyes-Wide" style="margin-bottom: 80px">Conoce &nbsp; nuestros &nbsp;eventos</h1>
             </div>
         <div class="container-fluid"> <!-- Start Container -->
            
