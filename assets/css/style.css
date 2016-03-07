@@ -178,7 +178,7 @@ fieldset {
 .section-title4 { margin-bottom: 50px }
 .section-title4 h1 {
     line-height: 75px;
-    font-size: 40px;
+    font-size: 55px;
 }
 @media only screen and (max-width:768px) { 
     .section-title4 h1 { text-align: center }
@@ -1679,14 +1679,14 @@ width: 100px;
 @media only screen and (max-width:768px) { 
     
     .logo-footer{ 
-     padding-right: 20px;
+     padding-right: 18px;
      padding-bottom: 20px;
      position: static;
     }
 }
 @media only screen and (max-width:480px) { 
      .logo-footer{ 
-      padding-right: 20px;
+      padding-right: 18px;
       padding-bottom: 20px;
       position: static;
     }
