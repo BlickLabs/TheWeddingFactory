@@ -206,7 +206,16 @@
 
 		}());
 		/* End Stellar for background scrolling  */
-		</script>		
+		</script>
+                <script type="text/javascript">
+                    $(function() {
+                        $('.navbar-nav').on('click', function(){ 
+                        if($('.navbar-header .navbar-toggle').css('display') !='none'){
+                        $(".navbar-header .navbar-toggle").trigger( "click" );
+                            }
+                        });
+                    });
+                </script>
 				
     </body>
 </html>

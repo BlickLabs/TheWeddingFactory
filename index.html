@@ -5,7 +5,8 @@
 		<!-- Meta -->
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 		<!-- SITE TITLE -->
 		<title>The Wedding Factory</title>		
@@ -234,7 +235,7 @@
                                                 <p class="Avenir-Roman" style="color:#616f6e;">+ 52 5683 2023</p>
                                                 <p class="Avenir-Roman" style="color:#616f6e;">+ 55 3707 2814</p>
                                                 <br>
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2660.5619361954205!2d-99.19430068997951!3d19.429561629951152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d201ff7136accd%3A0x8361ef2f271e2815!2sGalileo+31%2C+Polanco+IV+Secc%2C+11550+Ciudad+de+M%C3%A9xico%2C+D.F.!5e0!3m2!1ses-419!2smx!4v1456618461043" width="280" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2660.5619361954205!2d-99.19430068997951!3d19.429561629951152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d201ff7136accd%3A0x8361ef2f271e2815!2sGalileo+31%2C+Polanco+IV+Secc%2C+11550+Ciudad+de+M%C3%A9xico%2C+D.F.!5e0!3m2!1ses-419!2smx!4v1456618461043" width="250" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
                                             </div>
 					</div><!-- END COL -->
                                     </div>
@@ -319,7 +320,16 @@
 
 		}());
 		/* End Stellar for background scrolling  */
-		</script>		
+		</script>	
+                <script type="text/javascript">
+                    $(function() {
+                        $('.navbar-nav').on('click', function(){ 
+                        if($('.navbar-header .navbar-toggle').css('display') !='none'){
+                        $(".navbar-header .navbar-toggle").trigger( "click" );
+                            }
+                        });
+                    });
+                </script>
 		
     </body>
 </html>
