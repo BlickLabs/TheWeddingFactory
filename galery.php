@@ -144,12 +144,12 @@
             </center>
     </section>
 
-            <footer class="footer" style="background-color: #555e5d">
+    <footer class="footer" style="background-color: #555e5d">
 			<div class="container">
-                            <div class="row center-block">
-				<div class="col-md-12 text-center ">
-                                    <div class="footer-copyright wow fadeInUp " data-wow-duration="1s" data-wow-delay="0.6s" data-wow-offset="0">
-                                        <div class="col-sm-7" style="padding-bottom: 35px;">
+                            <div class="row center-block"  id="row-footer">
+				<div class="col-md-12 text-center">
+                                    <div  class="footer-copyright wow fadeInUp " data-wow-duration="1s" data-wow-delay="0.6s" data-wow-offset="0">
+                                        <div class="col-sm-7" style="padding-bottom: 7px;">
                                             <div class="form-group col-sm-6 "></div>
                                             <a href="index.html"><img src="img/logo_2.png" style="height: 140px;float: right;" class="logo-footer" ></a>
                                         </div>
