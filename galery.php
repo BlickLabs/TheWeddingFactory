@@ -133,36 +133,37 @@
                        }
                 ?>
             </div> <!-- End Row -->
-            <div id="page-selection" class="navbar-centered">
-              <ul class="pagination">
-                <li id="1" class="prev pagg"><a href="javascript:void(0);" style="color: #212121">1</a></li>
-                <li id="2" class="prev pagg"><a href="javascript:void(0);" style="color: #212121">2</a></li>
-                <li id="3" class="prev pagg"><a href="javascript:void(0);" style="color: #212121">3</a></li>
-               </ul>
-            </div>
+            <center>
+                <div id="page-selection" style="margin-bottom: 70px;margin-top:70px;" >
+                    <ul class="pagination">
+                        <li id="1" class="prev pagg"><a href="javascript:void(0);" style="color: #212121">1</a></li>
+                        <li id="2" class="prev pagg"><a href="javascript:void(0);" style="color: #212121">2</a></li>
+                        <li id="3" class="prev pagg"><a href="javascript:void(0);" style="color: #212121">3</a></li>
+                    </ul>
+                </div>
+            </center>
     </section>
 
-    <footer class="footer" style="background-color: #555e5d">
-            <div class="container">
-                <div class="row center-block" id="row-footer">
-                    <div class="col-md-12 text-center ">
-                       <div class="footer-copyright wow fadeInUp " data-wow-duration="1s" data-wow-delay="0.6s" data-wow-offset="0">
-                          <div class="col-sm-7">
-                              <div class="form-group col-sm-6 "></div>
-                              <a href="index.html"><img src="img/logo_2.png" style="height: 140px;float: right;" class="logo-footer"></a>
-                          </div>
-                         <div class=" form-group col-sm-5 center-block img-footer" style="text-align: left;margin-top: 50px;" >
-                                <h4 style="color: #fff;margin-bottom:-4px" class="center-block Avenir-Roman siguenos">Síguenos en:</h4>
-                              <img src="img/facebook.png" style="height: 67px;margin-left:-16px;margin-right:-26px" >
-                              <img src="img/instagram.png" style="height: 67px;margin-right: -26px;" >
-                              <img src="img/twitter.png" style="height: 67px;">     
-                          </div>
-                      </div> 
-                    </div>
-                        
-                </div>
-            </div>    
-    </footer>
+            <footer class="footer" style="background-color: #555e5d">
+			<div class="container">
+                            <div class="row center-block">
+				<div class="col-md-12 text-center ">
+                                    <div class="footer-copyright wow fadeInUp " data-wow-duration="1s" data-wow-delay="0.6s" data-wow-offset="0">
+                                        <div class="col-sm-7" style="padding-bottom: 50px;">
+                                            <div class="form-group col-sm-6 "></div>
+                                            <a href="index.html"><img src="img/logo_2.png" style="height: 140px;float: right;" class="logo-footer" ></a>
+                                        </div>
+                                        <div class=" form-group col-sm-5 center-block img-footer" style="text-align: left;margin-top: 30px;" >
+                                            <h4 style="color: #fff;margin-bottom:-4px" class="center-block Avenir-Roman">Síguenos en:</h4>
+                                            <img src="img/facebook.png" style="height: 67px;margin-left:-16px;margin-right:-26px" >
+                                            <img src="img/instagram.png" style="height: 67px;margin-right: -26px;" >
+                                            <img src="img/twitter.png" style="height: 67px;">     
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+		</footer>
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins)
