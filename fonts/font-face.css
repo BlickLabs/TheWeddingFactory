@@ -83,3 +83,13 @@ and open the template in the editor.
   color: #616f6e;
   }
  
+       @font-face {
+  font-family: "Eyes-Wide";
+  src: url("../fonts/KGEyesWideOpen.ttf");
+  }
+    
+    .Eyes-Wide {
+  font-family: Eyes-Wide;
+  color: #616f6e;
+  }
+ 
