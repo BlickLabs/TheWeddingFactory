@@ -1728,3 +1728,12 @@ width: 100px;
         padding-left: 15px;
     }
 }
+
+@media screen and (max-device-width: 480px){
+
+    img{
+
+        max-width:100%;
+        height:auto;
+    }
+}
