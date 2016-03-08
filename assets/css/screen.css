@@ -210,3 +210,72 @@
     background-attachment: scroll;
   }
 }
+//menu
+.menu{
+     background-size:cover; 
+    background-position: center center;
+    background-attachment: fixed;
+}
+@media only screen and (max-width:  1824px) { 
+    .menu{
+    background-size:cover; 
+    background-position: center center;
+    background-attachment: fixed;
+  }
+}
+@media only screen and (max-width: 1280px) { 
+    .menu{
+    background-size:cover; 
+    background-position: center center;
+    background-attachment: fixed;
+  }
+}
+@media only screen and (max-width: 1224px) { 
+    .menu{
+    background-size:cover; 
+    background-position: center center;
+    background-attachment: fixed;
+  }
+}
+@media only screen and (max-width: 1024px) { 
+    .menu{
+    background-size:cover; 
+    background-position: center center;
+    background-attachment: fixed;
+  }
+}
+@media only screen and (max-width:768px) { 
+    .menu{
+    background-size:cover; 
+    background-position: inherit;
+    background-attachment: scroll;
+  }
+}
+@media only screen and (max-width:768px) { 
+    .menu{
+    background-size:cover; 
+    background-position: inherit;
+    background-attachment: scroll;
+  }
+}
+@media only screen and (max-width:480px) { 
+    .menu{
+    background-size:cover; 
+    background-position: inherit;
+    background-attachment: scroll;
+ }
+}
+@media only screen and (max-width:360px) { 
+    .menu{
+    background-size:cover; 
+    background-position: inherit;
+    background-attachment: scroll;
+   }
+}
+@media only screen and (max-width:320px) { 
+   .menu{
+    background-size:cover; 
+    background-position: inherit;
+    background-attachment: scroll;
+  }
+}
