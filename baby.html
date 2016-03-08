@@ -218,10 +218,8 @@
 		</script>
                 <script type="text/javascript">
                     $(function() {
-                        $('.navbar-nav').on('click', function(){ 
-                        if($('.navbar-header .navbar-toggle').css('display') !='none'){
-                        $(".navbar-header .navbar-toggle").trigger( "click" );
-                            }
+                        $(document).on('click', function(){ 
+                        $('.navbar-collapse').removeClass('in')
                         });
                     });
                 </script>

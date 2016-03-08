@@ -7,7 +7,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
                 
 		
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 		<!-- SITE TITLE -->
 		<title>The Wedding Factory</title>		
@@ -339,10 +339,8 @@
 		</script>	
                 <script type="text/javascript">
                     $(function() {
-                        $('.navbar-nav').on('click', function(){ 
-                        if($('.navbar-header .navbar-toggle').css('display') !='none'){
-                        $(".navbar-header .navbar-toggle").trigger( "click" );
-                            }
+                        $(document).on('click', function(){ 
+                        $('.navbar-collapse').removeClass('in')
                         });
                     });
                 </script>
