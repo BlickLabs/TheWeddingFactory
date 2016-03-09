@@ -284,7 +284,7 @@ transition: all 0.4s ease 0s;
 }
 .btn-theme-bg:hover,
 .btn-theme-bg:focus {
-    background: #55ACEF;
+    background: #e66978;
 	border: 1px solid #e8e8e9;
     color: #ddd;
 }
@@ -633,8 +633,8 @@ transition: all 0.4s ease 0s;
     font-size: 22px;
     line-height: 30px;
     text-align: center;
-    padding-left: 262px;
-    padding-right: 262px;
+    padding-left: 250px;
+    padding-right: 250px;
 }
 @media only screen and (max-width:768px) { 
     .single_about h1 { 
@@ -1741,3 +1741,44 @@ width: 100px;
         height:auto;
     }
 }
+.wedding_buttons{
+    margin-top: 60px;
+    background-color: #e66978;
+    border-radius: 10px;
+}
+
+
+//wedding_planner buttons
+@media only screen and (max-width:768px) { 
+    .wedding_buttons {
+     margin-top: 30px;
+    background-color: #e66978;
+    border-radius: 10px;
+    
+}
+}
+@media only screen and (max-width:480px) { 
+    .wedding_buttons {
+     margin-top: 30px;
+    background-color: #e66978;
+    border-radius: 10px;
+    
+}
+}
+@media only screen and (max-width:360px) { 
+   .wedding_buttons {
+      margin-top: 30px;
+    background-color: #e66978;
+    border-radius: 10px;
+    
+}
+}
+@media only screen and (max-width:320px) { 
+   .wedding_buttons {
+     margin-top: 30px;
+    background-color: #e66978;
+    border-radius: 10px;
+    
+    }
+}
+
