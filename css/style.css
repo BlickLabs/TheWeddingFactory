@@ -1048,6 +1048,76 @@ section#portfolio.albums { margin-top: 85px }
     text-indent: -9999px;
     padding: 5px;
     opacity: 0.5;
+    
+}
+@media only screen and (max-width:768px) { 
+.nivo-lightbox-theme-default .nivo-lightbox-close {
+/*    display: block;
+    width: 30px;
+    height: 30px;
+    text-indent: -9999px;
+    padding: 10px;
+    opacity: 1;
+    background-color: black;
+    margin-right: 10px;
+    color: red;
+    */margin-right: 10px;
+  background-image: url('../img/x.png');
+   width: 30px;
+    height: 30px;
+}
+}
+@media only screen and (max-width:480px) { 
+.nivo-lightbox-theme-default .nivo-lightbox-close {
+/*    display: block;
+    width: 30px;
+    height: 30px;
+    text-indent: -9999px;
+    padding: 10px;
+    opacity: 1;
+    background-color: black;
+    
+    color: red;*/
+margin-right: 10px;
+  background-image: url('../img/x.png');
+   width: 30px;
+    height: 30px;
+}
+}
+@media only screen and (max-width:360px) { 
+.nivo-lightbox-theme-default .nivo-lightbox-close {
+/*    display: block;
+    width: 30px;
+    height: 30px;
+    text-indent: -9999px;
+    padding: 10px;
+    opacity: 2;
+    background-color: black;
+    margin-right: 10px;
+    color: red;*/
+margin-right: 10px;
+background-image: url('../img/x.png');
+ width: 30px;
+    height: 30px;
+}
+}
+@media only screen and (max-width:320px) { 
+.nivo-lightbox-theme-default .nivo-lightbox-close {
+/*    display: block;
+    width: 30px;
+    height: 30px;
+    text-indent: -9999px;
+    padding: 10px;
+    opacity: 2;
+    background-color: black;
+    margin-right: 10px;
+    color: red;*/
+margin-right: 10px;
+    background-image: url('../img/x.png');
+     width: 30px;
+    height: 30px;
+    
+}
 }
 .nivo-lightbox-theme-default .nivo-lightbox-title {
     font: 14px/20px 'Lato', sans-serif;
