@@ -1756,8 +1756,36 @@ width: 100px;
 
 //wedding_planner buttons
 @media only screen and (max-width:768px) { 
+    .iconos_weddding {
+     margin-top: 80px;
+  
+    
+}
+}
+@media only screen and (max-width:480px) { 
+    .iconos_weddding {
+    margin-top: 800px;
+     
+}
+}
+@media only screen and (max-width:360px) { 
+   .iconos_weddding{
+    margin-top: 80px;
+     
+    
+}
+}
+@media only screen and (max-width:320px) { 
+   .iconos_weddding {
+     margin-top: 80px;
+    
+    }
+}
+
+@media only screen and (max-width:768px) { 
     .wedding_buttons {
      margin-top: 30px;
+    
     background-color: #e66978;
     border-radius: 10px;
     
@@ -1766,6 +1794,7 @@ width: 100px;
 @media only screen and (max-width:480px) { 
     .wedding_buttons {
      margin-top: 30px;
+     margin-bottom: 50px;
     background-color: #e66978;
     border-radius: 10px;
     
@@ -1774,6 +1803,7 @@ width: 100px;
 @media only screen and (max-width:360px) { 
    .wedding_buttons {
       margin-top: 30px;
+      margin-bottom: 50px;
     background-color: #e66978;
     border-radius: 10px;
     
@@ -1782,9 +1812,12 @@ width: 100px;
 @media only screen and (max-width:320px) { 
    .wedding_buttons {
      margin-top: 30px;
+     margin-bottom: 50px;
     background-color: #e66978;
     border-radius: 10px;
     
     }
 }
+
+
 
