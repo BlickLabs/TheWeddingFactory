@@ -59,9 +59,8 @@
                 <link rel="apple-touch-icon" sizes="152x152" href="icon/apple-icon-152x152.png">
                 <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-icon-180x180.png">
                 <link rel="icon" type="image/png" sizes="192x192"  href="icon/android-icon-192x192.png">
-                <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
-                <link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
-                <link rel="manifest" href="/manifest.json">
+                <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-96x96.png">
+                <link rel="manifest" href="icon/manifest.json">    
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -210,9 +209,8 @@
             var $data = $(this);
             $("#row-" + $data.attr("id")).show("slow");
             $(".row").not('#row-footer, #row-' + $data.attr("id")).hide("slow");
-              
-                   $("html, body").animate({ scrollTop: 0 }, 2000);
-                    return false;
+            $("html, body").animate({ scrollTop: 0 }, 2000);
+            return false;
                  
         });
     });
