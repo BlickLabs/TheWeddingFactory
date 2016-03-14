@@ -197,7 +197,7 @@
     <script type="text/javascript" src="js/main.js"></script>
     <script>
     $(document).ready(function() {
-        $(".row").not("#row-1, #row-footer").hide();
+        $(".row").not("#row-1, #row-footer").hide("slow");
         // $('#page-selection').bootpag({
         //             total: 4
         //         }).on("page", function(event, /* page number here */ num){
@@ -205,10 +205,15 @@
         //              $(".row").not('#row-' + num).hide("slow");
 
         //         });
+        
         $(".pagg").on('click', function(event) {
             var $data = $(this);
             $("#row-" + $data.attr("id")).show("slow");
             $(".row").not('#row-footer, #row-' + $data.attr("id")).hide("slow");
+              
+                   $("html, body").animate({ scrollTop: 0 }, 2000);
+                    return false;
+                 
         });
     });
     </script>
@@ -244,6 +249,9 @@
                         $('.navbar-collapse').removeClass('in')
                         });
                     });
+                </script>
+                <script type="text/javascript">
+                 
                 </script>
   </body>
 </html>
