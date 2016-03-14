@@ -153,26 +153,27 @@ fieldset {
 @media only screen and (max-width:768px) { 
     .section-title2 h1 { 
         text-align: center;
-        font-size: 35px;    
+        font-size: 50px;    
     }
 }
 @media only screen and (max-width:480px) { 
     .section-title2 h1 { 
-	font-size: 30px;
+	font-size: 50px;
 	text-align: center;
         line-height: 48px;
     }
 }
 @media only screen and (max-width:360px) { 
     .section-title2 h1 { 
-	font-size: 25px;
+	font-size: 35px;
         line-height: 55px;
 	text-align: center; }
 }
 @media only screen and (max-width:320px) { 
     .section-title2 h1 {
         line-height: 55px;
-	text-align: center; }
+	text-align: center;
+    }
 }
 //sectio title 4
 .section-title4 { margin-bottom: 50px }
@@ -188,12 +189,12 @@ fieldset {
 }
 @media only screen and (max-width:480px) { 
     .section-title4 h1 { 
-	font-size: 40px;
+	font-size: 35px;
 	text-align: center; }
 }
 @media only screen and (max-width:360px) { 
     .section-title4 h1 { 
-	font-size: 40px;
+	font-size: 35px;
         line-height: 55px;
         text-align: center; 
     }
@@ -202,7 +203,7 @@ fieldset {
     .section-title4 h1 {
         line-height: 55px;
 	text-align: center;
-        font-size: 40px;
+        font-size: 35px;
     }
 }
 //sectio title 3
@@ -1553,7 +1554,7 @@ width: 100px;
 	width: 60px;
 	height: auto;
 	display: inline-block;
-	margin-top: -10px;
+	//margin-top: -10px;
 }
 
 @media only screen and (max-width:768px) { 
@@ -1575,7 +1576,155 @@ width: 100px;
 	
     }
 }
-
+.paloma { 
+    margin-top: -40px;    
+    }
+@media only screen and (max-width:768px) { 
+    .paloma { 
+    margin-top: -110px;    
+    }
+}
+@media only screen and (max-width:480px) { 
+    .paloma { 
+    margin-top: -110px;    
+    }
+}
+@media only screen and (max-width:360px) { 
+    .paloma { 
+    margin-top: -110px;    
+    }
+}
+@media only screen and (max-width:768px) { 
+    .paloma2 { 
+    margin-top: -35px;    
+    }
+}
+@media only screen and (max-width:480px) { 
+    .paloma2 { 
+    margin-top: -35px;    
+    }
+}
+@media only screen and (max-width:360px) { 
+    .paloma2{ 
+    margin-top: -35px;    
+    }
+}
+@media only screen and (max-width:320px) { 
+    .paloma2{ 
+    margin-top: -35px;    
+    }
+}
+//paloma3
+@media only screen and (max-width:768px) { 
+    .paloma3 { 
+    margin-top: -70px;    
+    }
+}
+@media only screen and (max-width:480px) { 
+    .paloma3 { 
+    margin-top: -70px;    
+    }
+}
+@media only screen and (max-width:360px) { 
+    .paloma3{ 
+    margin-top: -70px;    
+    }
+}
+@media only screen and (max-width:320px) { 
+    .paloma3{ 
+    margin-top: -70px;    
+    }
+}
+//paloma4
+@media only screen and (max-width:768px) { 
+    .paloma4 { 
+    margin-top: -47px;    
+    }
+}
+@media only screen and (max-width:480px) { 
+    .paloma4 { 
+    margin-top: -47px;    
+    }
+}
+@media only screen and (max-width:360px) { 
+    .paloma4{ 
+    margin-top: -47px;    
+    }
+}
+@media only screen and (max-width:320px) { 
+    .paloma4{ 
+    margin-top: -47px;    
+    }
+}
+//paloma4
+@media only screen and (max-width:768px) { 
+    .paloma5 { 
+    margin-top: -47px;    
+    }
+}
+@media only screen and (max-width:480px) { 
+    .paloma5 { 
+    margin-top: -47px;    
+    }
+}
+@media only screen and (max-width:360px) { 
+    .paloma5{ 
+    margin-top: -47px;    
+    }
+}
+@media only screen and (max-width:320px) { 
+    .paloma5{ 
+    margin-top: -47px;    
+    }
+}
+//paloma6
+.paloma6 { 
+    margin-top: -40px;    
+    }
+@media only screen and (max-width:768px) { 
+    .paloma6 { 
+    margin-top: -150px;    
+    }
+}
+@media only screen and (max-width:480px) { 
+    .paloma6 { 
+    margin-top: -150px;    
+    }
+}
+@media only screen and (max-width:360px) { 
+    .paloma6 { 
+    margin-top: -150px;    
+    }
+}
+@media only screen and (max-width:320px) { 
+    .paloma6 { 
+    margin-top: -150px;    
+    }
+}
+//paloma6
+.paloma7 { 
+    margin-top: -40px;    
+    }
+@media only screen and (max-width:768px) { 
+    .paloma7 { 
+    margin-top: -20px;    
+    }
+}
+@media only screen and (max-width:480px) { 
+    .paloma6 { 
+    margin-top: -20px;    
+    }
+}
+@media only screen and (max-width:360px) { 
+    .paloma6 { 
+    margin-top: -20px;    
+    }
+}
+@media only screen and (max-width:320px) { 
+    .paloma6 { 
+    margin-top: -0px;    
+    }
+}
 .benefits-info{
 	display: inline-block;
         width: 600px;
@@ -1599,6 +1748,14 @@ width: 100px;
     }
 }
 @media only screen and (max-width:360px) { 
+    .benefits-info {
+        display: inline-block;
+        width: 200px;
+        
+        text-align: left;
+    }
+}
+@media only screen and (max-width:320px) { 
     .benefits-info {
         display: inline-block;
         width: 200px;
