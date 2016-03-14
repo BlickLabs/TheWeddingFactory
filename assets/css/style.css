@@ -165,14 +165,15 @@ fieldset {
 }
 @media only screen and (max-width:360px) { 
     .section-title2 h1 { 
-	font-size: 35px;
-        line-height: 55px;
+	font-size: 40px;
+        line-height: 50px;
 	text-align: center; }
 }
 @media only screen and (max-width:320px) { 
     .section-title2 h1 {
-        line-height: 55px;
+        line-height: 50px;
 	text-align: center;
+        font-size: 35px;
     }
 }
 //sectio title 4
@@ -1820,21 +1821,25 @@ width: 100px;
     
     .separacion{ 
         padding-top: 50px;
+        padding-bottom:  50px;
     }
 }
 @media only screen and (max-width:480px) { 
     .separacion{ 
         padding-top: 50px;
+        padding-bottom:  50px;
     }
 }
 @media only screen and (max-width:360px) { 
     .separacion{ 
         padding-top: 50px;
+        padding-bottom:  50px;
     }
 }
 @media only screen and (max-width:320px) { 
     .separacion{ 
         padding-top: 50px;
+        padding-bottom:  50px;
     }
 }
 
@@ -1842,7 +1847,7 @@ width: 100px;
 @media only screen and (max-width:768px) { 
     
     .logo-footer{ 
-     padding-right: 18px;
+     padding-right: 80px;
      padding-bottom: 20px;
      position: static;
      padding-top: -5px;
@@ -1850,7 +1855,7 @@ width: 100px;
 }
 @media only screen and (max-width:480px) { 
      .logo-footer{ 
-      padding-right: 18px;
+      padding-right: 80px;
       padding-bottom: 20px;
       position: static;
       padding-top: -5px;
