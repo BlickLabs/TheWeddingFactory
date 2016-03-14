@@ -86,14 +86,14 @@
                                               
                     </div>
                     <div class="navbar-collapse collapse navbar-centered ">
-                                               <ul class="nav navbar-nav" >
-                                                   <li><a href="index.html" class="Montserrat-Regular">Inicio</a></li>
-                                                   <li><a href="quienes_somos.html" class="Montserrat-Regular">Quiénes Somos</a></li>
-                                                   <li><a href="index.html#services" class="Montserrat-Regular">Servicios</a></li>
-                                                   <li><a href="galery.php" class="Montserrat-Regular">Galería</a></li>
-                                                   <li><a href="index.html#contact" class="Montserrat-Regular">Contacto</a></li>
-                                               </ul>
-                                           </div> 
+                        <ul class="nav navbar-nav" >
+                            <li><a href="index.html" class="Montserrat-Regular">Inicio</a></li>
+                            <li><a href="quienes_somos.html" class="Montserrat-Regular">Quiénes Somos</a></li>
+                            <li><a href="index.html#services" class="Montserrat-Regular">Servicios</a></li>
+                            <li><a href="galery.php" class="Montserrat-Regular">Galería</a></li>
+                            <li><a href="index.html#contact" class="Montserrat-Regular">Contacto</a></li>
+                        </ul>
+                    </div> 
                 </div><!--- END CONTAINER -->
             </div> 
 
