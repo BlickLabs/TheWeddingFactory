@@ -1901,7 +1901,7 @@ width: 100px;
 @media only screen and (max-width:768px) { 
     
     .logo-footer{ 
-     padding-right: 80px;
+     padding-right: 45px;
      padding-bottom: 20px;
      position: static;
      padding-top: -5px;
@@ -1909,7 +1909,7 @@ width: 100px;
 }
 @media only screen and (max-width:480px) { 
      .logo-footer{ 
-      padding-right: 80px;
+      padding-right: 45px;
       padding-bottom: 20px;
       position: static;
       padding-top: -5px;
