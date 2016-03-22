@@ -351,3 +351,56 @@
     background-attachment: scroll;
   }
 }
+
+
+//mesas
+.mesas{
+    margin-top: 100px;
+}
+@media only screen and (max-width:  1824px) { 
+   mesas{
+    margin-top: 100px;
+}
+}
+@media only screen and (max-width: 1280px) { 
+    mesas{
+    margin-top: 100px;
+}
+}
+@media only screen and (max-width: 1224px) { 
+    mesas{
+    margin-top: 100px;
+}
+}
+@media only screen and (max-width: 1024px) { 
+  mesas{
+    margin-top: 100px;
+}
+}
+@media only screen and (max-width:768px) { 
+  mesas{
+    margin-top: 100px;
+}
+}
+@media only screen and (max-width:768px) { 
+  mesas{
+    margin-top: 100px;
+}
+}
+@media only screen and (max-width:480px) { 
+   mesas{
+    margin-top: 100px;
+}
+}
+@media only screen and (max-width:360px) { 
+   mesas{
+    margin-top: 100px;
+}
+}
+@media only screen and (max-width:320px) { 
+  mesas{
+    margin-top: 100px;
+}
+}
+
+
