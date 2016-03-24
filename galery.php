@@ -163,13 +163,13 @@
                                     <div  class="footer-copyright wow fadeInUp " data-wow-duration="1s" data-wow-delay="0.6s" data-wow-offset="0">
                                         <div class="col-sm-7" style="padding-bottom: 7px;">
                                             <div class="form-group col-sm-6 "></div>
-                                            <a href="index.html"><img src="img/logo_2.png" style="height: 140px;float: right;" class="logo-footer" ></a>
+                                            <a href="index.html"><img src="images/logo_2.png" style="height: 140px;float: right;" class="logo-footer" ></a>
                                         </div>
                                         <div class=" form-group col-sm-5 center-block img-footer" style="text-align: left;margin-top: 35px;" >
                                              <h4 style="color: #fff;margin-bottom:-4px" class="center-block Avenir-Roman siguenos">Síguenos en:</h4>
-                                            <a href="https://www.facebook.com/theweddingfactorymx/" target="_blank"><img src="img/facebook.png" style="height: 67px;margin-left:-16px;margin-right:-26px" ></a>
-                                             <a href="https://www.instagram.com/wedding_factory_mx/" target="_blank"><img src="img/instagram.png" style="height: 67px;margin-right: -26px;" ></a>
-                                             <a href="https://twitter.com/weddfactorymx" target="_blank"><img src="img/twitter.png" style="height: 67px;">     </a>
+                                            <a href="https://www.facebook.com/theweddingfactorymx/" target="_blank"><img src="images/facebook.png" style="height: 67px;margin-left:-16px;margin-right:-26px" ></a>
+                                             <a href="https://www.instagram.com/wedding_factory_mx/" target="_blank"><img src="images/instagram.png" style="height: 67px;margin-right: -26px;" ></a>
+                                             <a href="https://twitter.com/weddfactorymx" target="_blank"><img src="images/twitter.png" style="height: 67px;">     </a>
                                         </div>
                                     </div>
                                 </div>
@@ -202,7 +202,6 @@
         //         }).on("page", function(event, /* page number here */ num){
         //              $("#row-" + num).show("slow");
         //              $(".row").not('#row-' + num).hide("slow");
-
         //         });
         
         $(".pagg").on('click', function(event) {
@@ -228,7 +227,6 @@
 		<script type="text/javascript">
 		/*  Stellar for background scrolling  */
 		(function () {
-
 			if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 			 
 			} else {
@@ -237,7 +235,6 @@
 					responsive: true
 				});
 			}
-
 		}());
 		/* End Stellar for background scrolling  */
 		</script>

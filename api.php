@@ -8,7 +8,7 @@ $sc = mysql_real_escape_string($_GET["sc"]);
 //query only by id
 if ($id!=null && empty($st) && empty($sc)) {
    
-    $result = $mysqli->query("SELECT id_galery,title_galery,short_description,long_description,creation_date,modification_date, "
+    $result = $mysqli->query("SELECT id_galery,title_galery,short_description,creation_date,modification_date, "
             . "status FROM galery WHERE id_galery = '" . $id . "'");
     while ($row = $result->fetch_array(MYSQLI_ASSOC)) {
         
@@ -23,7 +23,7 @@ if ($id!=null && empty($st) && empty($sc)) {
             'images' => array(),
         );
     }
-    $result2 = $mysqli2->query("SELECT route,title,short_description,long_description from 
+    $result2 = $mysqli2->query("SELECT route,title,short_description from 
         content left join content_galery on content.id_content = content_galery.id_content where 
         content_galery.id_galery = '" . $id . "'");
     while ($row = $result2->fetch_array(MYSQLI_ASSOC)) {
