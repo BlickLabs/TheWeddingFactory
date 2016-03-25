@@ -68,7 +68,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</a>
-				<a class="brand" href="index.html"><span>Casa Beltrami</span></a>
+				<a class="brand" href="index.html"><span>The Wedding Factory</span></a>
 								
 				<!-- start: Header Menu -->
 				<div class="nav-no-collapse header-nav">
@@ -110,11 +110,10 @@
 				<div class="nav-collapse sidebar-nav">
 					<ul class="nav nav-tabs nav-stacked main-menu">
 						
-                                            <li><a href="salon.php"><i class="icon-edit"></i><span class="hidden-tablet">Salones</span></a></li>
-                                            <li><a href="events.php"><i class="icon-globe"></i><span class="hidden-tablet"> Eventos</span></a></li>
-				            <li><a href="services.php"><i class="icon-tags"></i><span class="hidden-tablet"> Servicios</span></a></li>
-                                            <li><a href="images.php"><i class="icon-list-alt"></i><span class="hidden-tablet"> Imagenes</span></a></li>
-						<li><a href="gallery.html"><i class="icon-picture"></i><span class="hidden-tablet"> Galería</span></a></li>
+                                            <li><a href="galeries.php"><i class="icon-edit"></i><span class="hidden-tablet">&nbsp;Galerias</span></a></li>
+                                            
+                                            <li><a href="images.php"><i class="icon-list-alt"></i><span class="hidden-tablet">&nbsp;Subir Imagenes</span></a></li>
+                                            <li><a href="Home.php"><i class="icon-picture"></i><span class="hidden-tablet"> &nbsp;Ver Imagenes</span></a></li>
 						
 					</ul>
 				</div>
@@ -138,10 +137,10 @@
     if (isset($_GET['u'])):
         $id = $_GET['u'];
         if (isset($_POST['bts'])):
-        $stmt = $mysqli->prepare("UPDATE content SET title=?,short_description=?,  status=?,modification_date=? WHERE id_content=?");
+        $stmt = $mysqli->prepare("UPDATE content SET title=?,description=?,  status=?,modification_date=? WHERE id_content=?");
         $stmt->bind_param('sssss', $title, $short_d, $status_photo, $m_date_photo, $id_content);
         $title = $_POST['title'];
-        $short_d = $_POST['sd'];
+        $short_d = $_POST['ld'];
         
         $status_photo = $_POST['status'];
         $m_date_photo = $_POST['md'];
@@ -171,18 +170,12 @@
                                id="title" name="title">
 		    </div>
                 </div>
-                  <div class="control-group col-sm-5 mar-top41">
-                    <label class="control-label" for="focusedInput">Descripción Corta: </label>
-		    <div class="controls">
-		        <input class="input-xlarge focused" id="focusedInput" type="text" value="<?php echo $row['short_description']?>"
-                               id="sd" name="sd">
-		    </div>
-                </div>
+                 
                   <div class="control-group col-sm-5 mar-top41">
                     <label class="control-label" for="focusedInput">Descripcion Larga:</label>
 		    <div class="controls">
                         <textarea class="input-xlarge focused" rows="5" id="focusedInput" type="text" 
-                                  id="ld" name="ld"><?php echo $row['long_description']?></textarea>
+                                  id="ld" name="ld"><?php echo $row['description']?></textarea>
 		    </div>
                 </div>
                      <div class="control-group col-sm-5 mar-top41">
@@ -201,13 +194,7 @@
                          <?php } ?>
 		</div>
             </div>
-                <div class="control-group col-sm-5">
-                    <label class="control-label" for="focusedInput">Fecha de Creación: </label>
-		    <div class="controls">
-		        <input class="input-xlarge focused" id="focusedInput" type="text" value="<?php echo date("Y/m/d") ?>"
-                               id="title" name="ld" disabled="">
-		    </div>
-                </div>
+                
                 
                 
                 <div class="form-group">
