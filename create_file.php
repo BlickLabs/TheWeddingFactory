@@ -3,7 +3,7 @@
     error_reporting(E_ALL);
     session_start();
     if (!isset($_SESSION['user_name'])) {
-        header("Location: index.php");
+        header("Location: login.php");
     }       
     $mail = $_SESSION['user_name'];
     $query2 = "SELECT nombre FROM Users WHERE user='$mail'";
@@ -62,7 +62,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</a>
-				<a class="brand" href="index.html"><span>Casa Beltrami</span></a>
+				<a class="brand" href="index.html"><span>The Wedding Factory</span></a>
 								
 				<!-- start: Header Menu -->
 				<div class="nav-no-collapse header-nav">
@@ -104,10 +104,8 @@
 				<div class="nav-collapse sidebar-nav">
 					<ul class="nav nav-tabs nav-stacked main-menu">
                                            <li><a href="salon.php"><i class="icon-calendar"></i><span class="hidden-tablet">&nbsp;Salones</span></a></li>
-                                           <li><a href="events.php"><i class="icon-globe"></i><span class="hidden-tablet"> Eventos</span></a></li>
-				            <li><a href="services.php"><i class="icon-tags"></i><span class="hidden-tablet"> Servicios</span></a></li>
-                                            <li class="active"><a href="images.php"><i class="icon-upload-alt"></i><span class="hidden-tablet">&nbsp; Imagenes</span></a></li>
-                                            <li><a href="Home.php"><i class="icon-picture"></i><span class="hidden-tablet">&nbsp; Galería</span></a></li>
+                                           <li class="active"><a href="images.php"><i class="icon-upload-alt"></i><span class="hidden-tablet">&nbsp; Imagenes</span></a></li>
+                                           <li><a href="Home.php"><i class="icon-picture"></i><span class="hidden-tablet">&nbsp; Galería</span></a></li>
 					</ul>
 				</div>
 			</div>
@@ -130,10 +128,7 @@
 				</li>
                                 <li><a href="images.php">Añadir Nueva Imagen</a></li>
 			</ul>
-                       <?php
-    include "config.php";
-    
-?>
+
 <h1 style="text-align: center">LLENA LOS SIGUIENTES CAMPOS</h1>
 <p><br/></p>
 
@@ -158,63 +153,32 @@
             </div>
             
             <div class="control-group col-sm-5 mar-top41">
-		<label class="control-label" for="selectError">Asignar salón:</label>
+		<label class="control-label" for="selectError">Asignar a Galería:</label>
 		<div class="controls">
-                    <select  data-rel="chosen" name="party" id="party">
+                    <select  data-rel="chosen" name="galery[]" id="galery">
                         <?php
                 $condition='true';
-                $sql1 = "SELECT id_party_room,party_room_name from party_room WHERE status='".$condition."'";
-                $result1 = $mysqli2->query($sql1);
+                $sql1 = "SELECT id_galery,title_galery from galery WHERE status='".$condition."'";
+                $result1 = $mysqli3->query($sql1);
                  if ($result1->num_rows > 0) { 
                             $combobit1 = "";
                             while ($row1 = $result1->fetch_array(MYSQLI_ASSOC)) {
-                            $combobit1 .=" <option value='" . $row1['id_party_room'] . "'>" . $row1['party_room_name'] . "</option>"; //concatenamos el los options para luego ser insertado en el HTML
+                            $combobit1 .=" <option value='" . $row1['id_galery'] . "'>" . $row1['title_galery'] . "</option>"; //concatenamos el los options para luego ser insertado en el HTML
                            }
                         } else {
                                 echo "No hubo resultados";
                                 }
-                        $mysqli2->close(); //cerramos la conexión
+                        $mysqli3->close(); //cerramos la conexión
                         echo $combobit1;
                     ?>
                 </select>
 		</div>
             </div>
             <div class="control-group col-sm-5 mar-top41">
-		<label class="control-label" for="selectError">Tipo de evento:</label>
-		<div class="controls ">
-                    <select  data-rel="chosen" name="event" id="event">
-                 <?php
-                        
-                    
-                        $sql = "SELECT id_event,name_event from events ";
-                        $result = $mysqli3->query($sql);
-                        if ($result->num_rows > 0) { 
-                            $combobit2 = "";
-                            while ($row = $result->fetch_array(MYSQLI_ASSOC)) {
-                            $combobit2 .=" <option value='" . $row['id_event'] . "'>" . $row['name_event'] . "</option>"; //concatenamos el los options para luego ser insertado en el HTML
-                           }
-                        } else {
-                                echo "No hubo resultados";
-                                }
-                        $mysqli3->close(); //cerramos la conexión
-                        echo $combobit2;
-                    ?>
-                </select>
-		</div>
-            </div>
-            
-            <div class="control-group col-sm-5 mar-top41">
-		<label class="control-label" for="focusedInput">Descripcion Corta: </label>
+		<label class="control-label" for="focusedInput">Descripción:</label>
 		    <div class="controls">
-                        <input class="input-xlarge focused"  type="text" name="desc_short"
-                               id="desc_short" >
-		    </div>
-	    </div>
-            <div class="control-group col-sm-5 mar-top41">
-		<label class="control-label" for="focusedInput">Descripcion Larga:</label>
-		    <div class="controls">
-                        <textarea class="input-xlarge focused" type="text" name="desc_long"
-                                  id="desc_long"> </textarea>
+                        <textarea class="input-xlarge focused" type="text" name="description"
+                                  id="description"> </textarea>
 		    </div>
 	    </div>
             <div class="control-group col-sm-5 mar-top41">
@@ -226,15 +190,7 @@
                     </select>
 		</div>
             </div>
-            <div class="control-group col-sm-5 mar-top41">
-		<label class="control-label" for="selectError">Decoration:</label>
-		<div class="controls">
-                    <select id="decoration" data-rel="chosen" name="decoration">
-                        <option value="1">Propia</option>
-                    <option value="0">terceros</option>
-                    </select>
-		</div>
-            </div>
+            
             
             <div class="form-group">
                 <input type="hidden" type="text" class="form-control" name="creation_date" id="creation_date" value="<?php echo date("Y/m/d") ?>">
