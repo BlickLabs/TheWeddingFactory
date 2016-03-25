@@ -1,7 +1,9 @@
 $(function () {
     $('#subida').submit(function () {
-        var comprobar = $('#title').val().length * $('#foto').val().length* $('#galery').val().length* $('#desc_short').val().length * $('#desc_long').val().length * $('#status').val().length * $('#creation_date').val().length;
 
+        var comprobar = $('#title').val().length* $('#foto').val().length*$('#galery').val().length*$('#description').val().length*$('#status').val().length*$('#creation_date').val().length;
+        
+        
         if (comprobar > 0) {
 
             var formulario = $('#subida');
@@ -9,7 +11,7 @@ $(function () {
             var datos = formulario.serialize();
 
             var archivos = new FormData();
-
+           
             var url = 'php/Upload_Photo.php';
 
             for (var i = 0; i < (formulario.find('input[type=file]').length); i++) {
@@ -32,7 +34,8 @@ $(function () {
                 success: function (data) {
 
                     $('#cargando').hide(900);
-                    $(location).attr('href', 'Galery_Photos.php');
+                    $(location).attr('href', 'images.php');
+                   
 
                     return false;
                 }

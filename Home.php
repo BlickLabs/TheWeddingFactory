@@ -157,9 +157,9 @@
                                                     <?php
                                                         include "config.php";
                                                         error_reporting(E_ALL);
-                                                        $res2 = $mysqli2->query("SELECT route,title,short_description,long_description from 
-        content left join content_galery on content.id_content = content_galery.id_content where 
-        content_galery.id_galery = '" . $id_pr . "'");
+                                                        $res2 = $mysqli2->query("SELECT route,title,description from 
+                                                         content left join content_galery on content.id_content = content_galery.id_content where 
+                                                         content_galery.id_galery = '" . $id_pr . "'");
                                                          $mysqli2->close();
                                                          while ($row2 = $res2->fetch_assoc()){
                                                              $path= 'php/album/' . $row2['route'];

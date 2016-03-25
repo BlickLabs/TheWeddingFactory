@@ -68,7 +68,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</a>
-				<a class="brand" href="index.php"><span>Casa Beltrami</span></a>
+                            <a class="brand" href="Home.php"><span><h1>The Wedding Factory</h1></span></a>
 								
 				<!-- start: Header Menu -->
 				<div class="nav-no-collapse header-nav">
@@ -131,7 +131,7 @@
 			<ul class="breadcrumb">
 				<li>
 					<i class="icon-home"></i>
-					<a href="index.php">Home</a> 
+					<a href="Home.php">Home</a> 
 					<i class="icon-angle-right"></i>
 				</li>
                                 <li><i class="icon-calendar"></i><a href="salon.php">&nbsp;Galerías Disponibles</a></li>
