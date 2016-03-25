@@ -170,7 +170,7 @@
                                                          <img src="<?php echo $path= 'php/album/' . $row2['route'];?>" />
                                                              <div class="mask">
                                                                  <h2><?php echo $row2['title']?></h2>
-                                                                       <p><?php echo $row2['id_content']?></p>
+                                                                       <p><?php $row2['id_content']?></p>
                                                                        <a href="Delete_Photo.php?d=<?php echo $row2['id_content'] ?>" class="info"><i class="icon-trash"></i> Eliminar</a>
                                                             </div>
                                                     </div>  
