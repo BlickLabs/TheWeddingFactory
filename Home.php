@@ -32,6 +32,8 @@
 	<!-- start: CSS -->
 	<link id="bootstrap-style" href="css_template/bootstrap.min.css" rel="stylesheet">
 	<link href="css_template/bootstrap-responsive.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css_template/style_common.css" />
+        <link rel="stylesheet" type="text/css" href="css_template/style1.css" />
 	<link id="base-style" href="css_template/admin.css" rel="stylesheet">
 	<link id="base-style-responsive" href="css_template/style-responsive.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
@@ -157,19 +159,22 @@
                                                     <?php
                                                         include "config.php";
                                                         error_reporting(E_ALL);
-                                                        $res2 = $mysqli2->query("SELECT route,title,description from 
+                                                        $res2 = $mysqli2->query("SELECT * from 
                                                          content left join content_galery on content.id_content = content_galery.id_content where 
                                                          content_galery.id_galery = '" . $id_pr . "'");
                                                          $mysqli2->close();
                                                          while ($row2 = $res2->fetch_assoc()){
                                                              $path= 'php/album/' . $row2['route'];
                                                     ?>
-                                                        
-							<div id="image-1" class="masonry-thumb">
-							
-                                                            <img  src="<?php echo $path= 'php/album/' . $row2['route'];?>">
-							</div>
-                                                        
+                                                    <div class="masonry-thumb view view-first">
+                                                         <img src="<?php echo $path= 'php/album/' . $row2['route'];?>" />
+                                                             <div class="mask">
+                                                                 <h2><?php echo $row2['title']?></h2>
+                                                                       <p><?php echo $row2['id_content']?></p>
+                                                                       <a href="Delete_Photo.php?d=<?php echo $row2['id_content'] ?>" class="info"><i class="icon-trash"></i> Eliminar</a>
+                                                            </div>
+                                                    </div>  
+                                                   
 						<?php	}	?>
 					        </div>
 					
