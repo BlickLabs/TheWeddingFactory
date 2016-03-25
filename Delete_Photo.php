@@ -6,7 +6,7 @@ include "config.php";
         $id = $_GET['d'];
         if ($stmt->execute()):
             $mysqli->close();
-            echo "<script>location.href='Galery_Photos.php'</script>";
+            echo "<script>location.href='Home.php'</script>";
         else:
             echo "<script>alert('" . $stmt->error . "')</script>";
         endif;
