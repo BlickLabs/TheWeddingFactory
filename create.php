@@ -112,7 +112,7 @@
 					<ul class="nav nav-tabs nav-stacked main-menu">
                                             <li class="active"><a href="galeries.php"><i class="icon-calendar"></i><span class="hidden-tablet">&nbsp;Galerías</span></a></li>
                                             <li><a href="images.php"><i class="icon-upload-alt"></i><span class="hidden-tablet">&nbsp; Imagenes</span></a></li>
-                                            <li><a href="Home.php"><i class="icon-picture"></i><span class="hidden-tablet">&nbsp; Galería</span></a></li>
+                                            <li><a href="Home.php"><i class="icon-picture"></i><span class="hidden-tablet">&nbsp;Ver Imagenes</span></a></li>
 						
 					</ul>
 				</div>
@@ -211,8 +211,8 @@ if (isset($_POST['bts'])):
                 <input type="text" class="form-control" name="section" id="">
             </div>-->
             <center>
-                <a href="salon.php" class="btn btn-primary btn-md center-block mar-right"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> Regresar</a>
-                <button type="submit" name="bts" class="btn btn-success center-block">Guardar</button>
+                <a href="galeries.php" class="btn btn-primary btn-md center-block mar-right"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span><i class="icon-arrow-left"></i>&nbsp; Regresar</a>
+                <button type="submit" name="bts" class="btn btn-success center-block"><i class="icon-save"></i>&nbsp;Guardar</button>
             </center> 
         </form>
           

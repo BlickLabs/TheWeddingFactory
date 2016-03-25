@@ -68,7 +68,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</a>
-				<a class="brand" href="index.html"><span>Casa Beltrami</span></a>
+                            <a class="brand" href="Home.php"><span>The Wedding Factory</span></a>
 								
 				<!-- start: Header Menu -->
 				<div class="nav-no-collapse header-nav">
@@ -111,11 +111,9 @@
 					<ul class="nav nav-tabs nav-stacked main-menu">
 						
                                            	
-                                            <li class="active"><a href="salon.php"><i class="icon-edit"></i><span class="hidden-tablet">Galería</span></a></li>
-                                            <li><a href="events.php"><i class="icon-globe"></i><span class="hidden-tablet"> Eventos</span></a></li>
-				            <li><a href="services.php"><i class="icon-tags"></i><span class="hidden-tablet"> Servicios</span></a></li>
-                                            <li><a href="images.php"><i class="icon-list-alt"></i><span class="hidden-tablet"> Imagenes</span></a></li>
-					    <li><a href="gallery.html"><i class="icon-picture"></i><span class="hidden-tablet"> Galería</span></a></li>
+                                            <li class="active"><a href="salon.php"><i class="icon-edit"></i><span class="hidden-tablet">Galerías</span></a></li>
+                                            <li><a href="images.php"><i class="icon-upload-alt"></i><span class="hidden-tablet"> Subir Imagenes</span></a></li>
+					    <li><a href="gallery.html"><i class="icon-picture"></i><span class="hidden-tablet"> Ver Imagenes</span></a></li>
 						
 					</ul>
 				</div>
@@ -134,7 +132,7 @@
                                  <ul class="breadcrumb">
 				<li>
 					<i class="icon-home"></i>
-					<a href="index.html">Home</a> 
+                                        <a href="Home.php">Home</a> 
 					<i class="icon-angle-right"></i>
 				</li>
 				<li><i class="icon-calendar"></i><a href="salon.php">&nbsp;Editar Galería</a></li>
@@ -207,8 +205,8 @@ endif;
                     <input type="hidden" class="form-control" name="modification_date" id="tl" value="<?php echo date("Y/m/d") ?>">
                 </div>
                 <center>
-                     <a href="salon.php" class="btn btn-primary btn-md center-block mar-right"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> Regresar</a>
-                    <button type="submit" name="bts" class="btn btn-success">Guardar Cambios</button>
+                    <a href="galeries.php" class="btn btn-primary btn-md center-block mar-right"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span><i class="icon-arrow-left"></i>&nbsp;Regresar</a>
+                    <button type="submit" name="bts" class="btn btn-success"><i class="icon-refresh"></i>&nbsp;Guardar Cambios</button>
                 </center>
             </form>
         </div>

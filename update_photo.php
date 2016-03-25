@@ -201,8 +201,8 @@
                     <input type="hidden" class="form-control" name="md" id="tl" value="">
                 </div>
                 <center>
-                    <a href="images.php" class="btn btn-primary btn-md center-block"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> Regresar</a>
-                <button type="submit" name="bts" class="btn btn-success center-block">Guardar</button>
+                    <a href="images.php" class="btn btn-primary btn-md center-block"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span><i class="icon-arrow-left"></i>&nbsp;Regresar</a>
+                    <button type="submit" name="bts" class="btn btn-success center-block"><i class="icon-refresh"></i>&nbsp;Guardar Cambios</button>
                 </center>
             </form>
         </div>
