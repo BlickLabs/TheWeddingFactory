@@ -8,14 +8,14 @@ $id = 1;
 //query only by id
 if ($id!=null && empty($st) && empty($sc)) {
    
-    $result = $mysqli->query("SELECT id_galery,title_galery,description,creation_date,modification_date, "
+    $result = $mysqli->query("SELECT id_galery,title_galery,short_description,creation_date,modification_date, "
             . "status FROM galery WHERE id_galery = '" . $id . "'");
     while ($row = $result->fetch_array(MYSQLI_ASSOC)) {
         
         $response ['galery'] = array(
             'id_gallery' => $row['id_galery'],
             'title' => $row['title_galery'],
-            'long_description' => $row['description'],
+            'description' => $row['description'],
             'status' => $row['status'],
             'creation_date' => $row['creation_date'],
             'modification_date' => $row['modification_date'],
