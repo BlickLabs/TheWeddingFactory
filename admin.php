@@ -27,7 +27,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Bootstrap Metro Dashboard by Dennis Ji for ARM demo</title>
+	<title>Inicio De Sesión</title>
 	<meta name="description" content="Bootstrap Metro Dashboard"/>
 	<meta name="author" content="Dennis Ji"/>
 	<meta name="keyword" content="Metro, Metro UI, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina"/>
@@ -63,7 +63,7 @@
                         <a href="index.html"><i class="halflings-icon home"></i></a>
                         <a href="#"><i class="halflings-icon cog"></i></a>
                     </div>
-                        <h2>Login to your account</h2>
+                        <h2>Iniciar Sesión</h2>
                            
                             <form class="form-horizontal"  method="post">
                                 
