@@ -111,6 +111,7 @@
             <div class="row" id="row-1"> <!-- Start Row -->
                 <?php
                     include "api.php";
+                    error_reporting(E_ALL);
                         $count = 1;
                         $row = 2;
                         $json = json_decode($json2, true); 
