@@ -2,9 +2,9 @@
 include "config.php";
 //header("Content-Type: application/json; charset=UTF-8");
 error_reporting(E_ALL);
-$id = mysql_real_escape_string(1);
-$st = mysql_real_escape_string($_GET["st"]);
-$sc = mysql_real_escape_string($_GET["sc"]);
+$id = 1;
+//$st = mysql_real_escape_string($_GET["st"]);
+//$sc = mysql_real_escape_string($_GET["sc"]);
 //query only by id
 if ($id!=null && empty($st) && empty($sc)) {
    
