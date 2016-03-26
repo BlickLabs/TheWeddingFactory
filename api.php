@@ -1,7 +1,7 @@
 <?php
 include "config.php";
 //header("Content-Type: application/json; charset=UTF-8");
-error_reporting(0);
+error_reporting(E_ALL);
 $id = mysql_real_escape_string(1);
 $st = mysql_real_escape_string($_GET["st"]);
 $sc = mysql_real_escape_string($_GET["sc"]);
