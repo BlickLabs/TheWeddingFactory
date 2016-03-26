@@ -116,8 +116,8 @@
                         $json = json_decode($json2, true); 
                         foreach ($json['images'] as $value) {
                         $path = $value['path'];
-                        $tittle = $value['tittle'];
-                        $short_description = $value['short_description'];
+                        $tittle = $value['title'];
+                        $short_description = $value['description'];
                         $img_details = json_encode($value);
                         $RequestText = urlencode($img_details);
                         if($count <=9){

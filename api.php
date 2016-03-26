@@ -23,7 +23,7 @@ if ($id!=null && empty($st) && empty($sc)) {
             'images' => array(),
         );
     }
-    $result2 = $mysqli2->query("SELECT route,title,short_description from 
+    $result2 = $mysqli2->query("SELECT route,title,description from 
         content left join content_galery on content.id_content = content_galery.id_content where 
         content_galery.id_galery = '" . $id . "'");
     while ($row = $result2->fetch_array(MYSQLI_ASSOC)) {
