@@ -1,5 +1,16 @@
-$(function () {
-    $('#subida').submit(function () {
+$(document).ready(function() {
+       $("#subida").validate({
+        rules: {
+            title: { required: true, minlength: 5},
+            description: { required:true, minlength:5}
+        },
+        messages: {
+            title: "Debes introducir un titulo.",
+            description : "Debes introduccir una descripción.",
+            
+        },
+        submitHandler: function(form){
+        
 
         var comprobar = $('#title').val().length* $('#foto').val().length*$('#galery').val().length*$('#description').val().length*$('#status').val().length*$('#creation_date').val().length;
         
@@ -87,5 +98,10 @@ $(function () {
             }
 
         }
+  
+
+
+        }
     });
-});
+  });
+    

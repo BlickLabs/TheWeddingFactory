@@ -3,7 +3,7 @@
     error_reporting(E_ALL);
     session_start();
     if (!isset($_SESSION['user_name'])) {
-        header("Location: login.php");
+        header("Location: admin.php");
     }       
     $mail = $_SESSION['user_name'];
     $query3 = "SELECT nombre FROM Users WHERE user='$mail'";
@@ -35,6 +35,7 @@
         <link rel="stylesheet" type="text/css" href="css_template/style_common.css" />
         <link rel="stylesheet" type="text/css" href="css_template/style1.css" />
 	<link id="base-style" href="css_template/admin.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../css/nivo-lightbox.css">
 	<link id="base-style-responsive" href="css_template/style-responsive.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
 	<!-- end: CSS -->
@@ -108,9 +109,9 @@
 			<div id="sidebar-left" class="span2">
 				<div class="nav-collapse sidebar-nav">
 					<ul class="nav nav-tabs nav-stacked main-menu">
-                                            <li><a href="galeries.php"><i class="icon-calendar"></i><span class="hidden-tablet">&nbsp;Galerías</span></a></li>
-                                            <li><a href="images.php"><i class="icon-upload-alt"></i><span class="hidden-tablet">&nbsp; Imagenes</span></a></li>
+<!--                                            <li><a href="galeries.php"><i class="icon-calendar"></i><span class="hidden-tablet">&nbsp;Galerías</span></a></li>-->
                                             <li><a href="Home.php"><i class="icon-picture"></i><span class="hidden-tablet">&nbsp;Ver Imagenes</span></a></li>
+                                            <li><a href="images.php"><i class="icon-upload-alt"></i><span class="hidden-tablet">&nbsp; Añadir Imagenes</span></a></li>
 					</ul>
 				</div>
 			</div>
@@ -165,17 +166,9 @@
                                                          $mysqli2->close();
                                                          while ($row2 = $res2->fetch_assoc()){
                                                              $path= 'php/album/' . $row2['route'];
+                                                             
                                                     ?>
-                                                    <div class="masonry-thumb view view-first">
-                                                         <img src="<?php echo $path= 'php/album/' . $row2['route'];?>" />
-                                                             <div class="mask">
-                                                                 <h2><?php echo $row2['title']?></h2>
-                                                                       <p><?php $row2['id_content']?></p>
-                                                                       <a href="Delete_Photo.php?d=<?php echo $row2['id_content'] ?>" class="info"><i class="icon-trash"></i> Eliminar</a>
-                                                                       <a href=""  data-toggle="modal" data-target="#basicModal2" class="info"><i class="icon-zoom-in"></i> Zoom</a>
-                                                            </div>
-                                                    </div>
-                                                    <div class="modal fade" id="basicModal2" tabindex="-1" role="dialog" aria-labelledby="basicModal2" aria-hidden="true">
+<!--                                                            <div class="modal fade" id="basicModal2" tabindex="-1" role="dialog" aria-labelledby="basicModal2" aria-hidden="true">
 							    <div class="modal-dialog">
 							        <div class=" modal-content modal-content-img">
 							                <button type="button" class="close btn-close-img" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -184,9 +177,46 @@
 							            </div>
 							        </div>
 							    </div>
-							</div>
-                                                   
+							</div>-->
+                                                             
+                                                    <div class="masonry-thumb view view-first">
+                                                         <img src="<?php echo $path= 'php/album/' . $row2['route'];?>" />
+                                                             <div class="mask hover-bg">
+                                                                 <h2><?php echo $row2['title']?></h2>
+                                                                       <p><?php echo $row2['id_content']?></p>
+                                                                       <a href="Delete_Photo.php?d=<?php echo $row2['id_content'] ?>" class="info"><i class="icon-trash"></i> Eliminar</a>
+                                                                       <a href="<?php echo $path; ?>" class="btn btn-default read-more-btn" title="<?php echo $tittle; ?>" data-lightbox-gallery="gallery1"> Zoom</a>
+                                                                       <a class="btn btn-lg btn-danger" data-toggle="modal" data-target="#basicModal"   >
+                                                                    <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Borrarrr</a>
+                                                                  
+                                                            </div>
+  
+<!--                                                           <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true" >
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h4 class="modal-title" id="myModalLabel">Atención</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h3>¿Estas seguro de eliminar el contenido?<?php echo $row2['id_content'] ?></h3>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrrar</button>
+                                            <a href="Delete_Photo.php?d=<?php echo $row2['id_content'] ?>"><button type="button" class="btn btn-primary">Aceptar</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>-->
+                                                    </div>
+                                         
+                            
+                             
+                                                           
 						<?php	}	?>
+
+                                                       
+                       
 					        </div>
 					
 				</div><!--/span-->
@@ -261,7 +291,7 @@
 		<script src="js_template/jquery.cleditor.min.js"></script>
 	
 		<script src="js_template/jquery.noty.js"></script>
-	
+                <script type="text/javascript" src="js/nivo-lightbox.js"></script>
 		<script src="js_template/jquery.elfinder.min.js"></script>
 	
 		<script src="js_template/jquery.raty.min.js"></script>
@@ -281,6 +311,7 @@
 		<script src="js_template/jquery.sparkline.min.js"></script>
 	
 		<script src="js_template/counter.js"></script>
+                <script type="text/javascript" src="js/jasny-bootstrap.min.js"></script>    
 	
 		<script src="js_template/retina.js"></script>
 

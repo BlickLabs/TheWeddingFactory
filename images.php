@@ -3,7 +3,7 @@
     error_reporting(E_ALL);
     session_start();
     if (!isset($_SESSION['user_name'])) {
-        header("Location: login.php");
+        header("Location: admin.php");
     }       
     $mail = $_SESSION['user_name'];
     $query2 = "SELECT nombre FROM Users WHERE user='$mail'";
@@ -109,9 +109,11 @@
 			<div id="sidebar-left" class="span2">
 				<div class="nav-collapse sidebar-nav">
 					<ul class="nav nav-tabs nav-stacked main-menu">
-                                            <li><a href="galeries.php"><i class="icon-calendar"></i><span class="hidden-tablet">&nbsp;Galerias</span></a></li>
-                                            <li><a href="images.php"><i class="icon-upload-alt"></i><span class="hidden-tablet">&nbsp;Subir Imagenes</span></a></li>
+<!--                                            <li><a href="galeries.php"><i class="icon-calendar"></i><span class="hidden-tablet">&nbsp;Galerias</span></a></li>-->
                                             <li><a href="Home.php"><i class="icon-picture"></i><span class="hidden-tablet">&nbsp;Ver Imagenes</span></a></li>
+                                            <li><a href="images.php"><i class="icon-upload-alt"></i><span class="hidden-tablet">&nbsp;Añadir Imagenes</span></a></li>
+                                            
+                                            
 					</ul>
 				</div>
 			</div>
