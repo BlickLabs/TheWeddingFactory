@@ -8,15 +8,14 @@ $id = 1;
 //query only by id
 if ($id!=null && empty($st) && empty($sc)) {
    
-    $result = $mysqli->query("SELECT id_galery,title_galery,short_description,creation_date,modification_date, "
+    $result = $mysqli->query("SELECT id_galery,title_galery,description,creation_date,modification_date, "
             . "status FROM galery WHERE id_galery = '" . $id . "'");
     while ($row = $result->fetch_array(MYSQLI_ASSOC)) {
         
         $response ['galery'] = array(
             'id_gallery' => $row['id_galery'],
             'title' => $row['title_galery'],
-            'short_description' => $row['short_description'],
-            'long_description' => $row['long_description'],
+            'long_description' => $row['description'],
             'status' => $row['status'],
             'creation_date' => $row['creation_date'],
             'modification_date' => $row['modification_date'],
@@ -27,8 +26,8 @@ if ($id!=null && empty($st) && empty($sc)) {
         content left join content_galery on content.id_content = content_galery.id_content where 
         content_galery.id_galery = '" . $id . "'");
     while ($row = $result2->fetch_array(MYSQLI_ASSOC)) {
-        $sh_des_im = mysql_real_escape_string($row['short_description']);
-        $path= mysql_real_escape_string('php/album/' . $row['route']);
+        $sh_des_im = $row['short_description'];
+        $path= 'php/album/' . $row['route'];
         $partialImage = array(
             'path' =>  $path,
             'title' => $row ['title'],
