@@ -42,15 +42,14 @@ if ($id!=null && empty($st) && empty($sc)) {
     elseif($id!=null && $st!=null && empty ($sc)) {
     echo 'by id and status';
   
-    $result = $mysqli->query("SELECT id_galery,title_galery,short_description,long_description,creation_date,modification_date, "
+    $result = $mysqli->query("SELECT id_galery,title_galery,description,creation_date,modification_date, "
             . "status FROM galery WHERE id_galery = '" . $id . "' and status ='" . $st . "'");
     while ($row = $result->fetch_array(MYSQLI_ASSOC)) {
         $sh = mysql_real_escape_string();
         $response ['galery'] = array(
             'id_gallery' => $row['id_galery'],
             'title' => $row['title_galery'],
-            'short_description' => $row['short_description'],
-            'long_description' => $row['long_description'],
+            'description' => $row['description'],
             'status' => $row['status'],
             'creation_date' => $row['creation_date'],
             'modification_date' => $row['modification_date'],
