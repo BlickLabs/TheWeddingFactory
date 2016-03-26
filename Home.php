@@ -157,7 +157,7 @@
 					<div class="box-content">
 						<div class="masonry-gallery">
                                                     <?php
-                                                        include "config.php";
+                                                      
                                                         error_reporting(E_ALL);
                                                         $res2 = $mysqli2->query("SELECT * from 
                                                          content left join content_galery on content.id_content = content_galery.id_content where 
@@ -172,8 +172,19 @@
                                                                  <h2><?php echo $row2['title']?></h2>
                                                                        <p><?php $row2['id_content']?></p>
                                                                        <a href="Delete_Photo.php?d=<?php echo $row2['id_content'] ?>" class="info"><i class="icon-trash"></i> Eliminar</a>
+                                                                       <a href=""  data-toggle="modal" data-target="#basicModal2" class="info"><i class="icon-zoom-in"></i> Zoom</a>
                                                             </div>
-                                                    </div>  
+                                                    </div>
+                                                    <div class="modal fade" id="basicModal2" tabindex="-1" role="dialog" aria-labelledby="basicModal2" aria-hidden="true">
+							    <div class="modal-dialog">
+							        <div class=" modal-content modal-content-img">
+							                <button type="button" class="close btn-close-img" data-dismiss="modal" aria-hidden="true">&times;</button>
+							            <div class="modal-body modal-body-img">
+							               <img class="grayscale modal-img" src="<?php echo 'php/album/' . $row2['route'];?>">
+							            </div>
+							        </div>
+							    </div>
+							</div>
                                                    
 						<?php	}	?>
 					        </div>
