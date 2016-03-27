@@ -148,7 +148,7 @@
             <table id="ghatable" class="display table table-bordered table-stripe" cellspacing="4"  style="margin-top: 50px">
                 <thead >
                     <tr >
-                        <th style="text-align: center">ID</th>
+<!--                        <th style="text-align: center">ID</th>-->
                         <th style="text-align: center">Titulo</th>
                         <th style="text-align: center">Imagen</th>
                         <th style="text-align: center"> Estatus</th>
@@ -158,12 +158,12 @@
                 </thead>
                 <tbody>
                     <?php
-                        $res = $mysqli2->query("SELECT * FROM content");
+                        $res = $mysqli2->query("SELECT * FROM content order by id_content desc");
                         $mysqli2->close();
                         while ($row = $res->fetch_assoc()):
                     ?>
                         <tr>
-                            <td style="text-align: center;" width="2%" class="mar-toptable"><?php echo $row['id_content'] ?></td>
+<!--                            <td style="text-align: center;" width="2%" class="mar-toptable"><?php echo $row['id_content'] ?></td>-->
                             <td style="text-align: center;"width="8%"><?php echo $row['title'];  ?></td>
                             <td width="10%"><img class="grayscale center-block" src="<?php echo 'php/album/' . $row['route'];?>" style="width: 250px;"></td>
                             <td style="text-align: center;padding-top: 70px" width="5%">

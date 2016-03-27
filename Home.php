@@ -28,8 +28,12 @@
 	<!-- start: Mobile Specific -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- end: Mobile Specific -->
-	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="nivo-lightbox.js"></script>
+
 	<!-- start: CSS -->
+        <link href="nivo-lightbox.css" rel="stylesheet" type="text/css">
+        <link href="themes/default/default.css" rel="stylesheet" type="text/css">
 	<link id="bootstrap-style" href="css_template/bootstrap.min.css" rel="stylesheet">
 	<link href="css_template/bootstrap-responsive.min.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css_template/style_common.css" />
@@ -165,7 +169,7 @@
                                                         error_reporting(E_ALL);
                                                         $res2 = $mysqli2->query("SELECT * from 
                                                          content left join content_galery on content.id_content = content_galery.id_content where 
-                                                         content_galery.id_galery = '" . $id_pr . "'");
+                                                         content_galery.id_galery = '" . $id_pr . "' order by content.id_content desc");
                                                          $mysqli2->close();
                                                          while ($row2 = $res2->fetch_assoc()){
                                                              $path= 'php/album/' . $row2['route'];
@@ -183,12 +187,13 @@
 							</div>-->
                                                              
                                                     <div class="masonry-thumb view view-first">
-                                                         <img src="<?php echo $path= 'php/album/' . $row2['route'];?>" />
+                                                        
+                                                         <img src="<?php echo $path= 'php/album/' . $row2['route'];?>" /></a>
                                                              <div class="mask hover-bg">
                                                                  <h2><?php echo $row2['title']?></h2>
-                                                                       <p><?php echo $row2['id_content']?></p>
-                                                                       <a button type="button" href="#<?php echo $row2['id_content'] ?>" data-toggle="modal" class="btn btn-primary"  > <i class="icon-trash"></i> Eliminar</a>
-                                                                       <a href="<?php echo $path; ?>" class="btn btn-default read-more-btn" title="<?php echo $tittle; ?>" data-lightbox-gallery="gallery1"> Zoom</a>
+                                                                       <p><?php  $row2['id_content']?></p>
+                                                                       <a button type="button" href="#<?php echo $row2['id_content'] ?>" data-toggle="modal" class="btn btn-danger"  > <i class="icon-trash"></i> Eliminar</a>
+                                                                       <a href="<?php echo $path; ?>" class="btn btn-success" title="<?php echo $tittle; ?>" data-lightbox-gallery="gallery1"><i class="icon-zoom-in"></i> Zoom</a>
                                                                       
                                                                        
                                                                   
@@ -203,11 +208,11 @@
                                             <h4 class="modal-title" id="myModalLabel">Atención</h4>
                                         </div>
                                         <div class="modal-body">
-                                            <h3>¿Estas seguro de eliminar el contenido?<?php echo $row2['id_content'] ?></h3>
+                                            <h3>¿Estas seguro de eliminar el contenido?</h3>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrrar</button>
-                                            <a href="Delete_Photo.php?d=<?php echo $row2['id_content'] ?>"><button type="button" class="btn btn-primary">Aceptar</button></a>
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="icon"></i>Cerrrar</button>
+                                            <a href="Delete_Photo.php?d=<?php echo $row2['id_content'] ?>"><button type="button" class="btn btn-success"><i class="icon"></i>Aceptar</button></a>
                                         </div>
                                     </div>
                                 </div>
@@ -264,7 +269,7 @@
 	</footer>
 	
 	<!-- start: JavaScript-->
-
+            
 		<script src="js_template/jquery-1.9.1.min.js"></script>
 	<script src="js_template/jquery-migrate-1.0.0.min.js"></script>
 	
@@ -320,6 +325,10 @@
 		<script src="js_template/retina.js"></script>
 
 		<script src="js_template/custom.js"></script>
+                
+</script>
+
+
 	<!-- end: JavaScript-->
 	
 </body>
