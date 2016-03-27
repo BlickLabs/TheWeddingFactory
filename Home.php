@@ -171,7 +171,7 @@
                                                              $path= 'php/album/' . $row2['route'];
                                                              
                                                     ?>
-<!--                                                            <div class="modal fade" id="basicModal2" tabindex="-1" role="dialog" aria-labelledby="basicModal2" aria-hidden="true">
+                                                            <div class="modal fade" id="basicModal2" tabindex="-1" role="dialog" aria-labelledby="basicModal2" aria-hidden="true">
 							    <div class="modal-dialog">
 							        <div class=" modal-content modal-content-img">
 							                <button type="button" class="close btn-close-img" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -180,7 +180,7 @@
 							            </div>
 							        </div>
 							    </div>
-							</div>-->
+							</div>
                                                              
                                                     <div class="masonry-thumb view view-first">
                                                          <img src="<?php echo $path= 'php/album/' . $row2['route'];?>" />
@@ -188,13 +188,13 @@
                                                                  <h2><?php echo $row2['title']?></h2>
                                                                        <p><?php echo $row2['id_content']?></p>
                                                                        <a href="Delete_Photo.php?d=<?php echo $row2['id_content'] ?>" class="info"><i class="icon-trash"></i> Eliminar</a>
-                                                                       <a href="<?php echo $path; ?>" class="btn btn-default read-more-btn" title="<?php echo $tittle; ?>" data-lightbox-gallery="gallery1"> Zoom</a>
+                                                                       <a href="" class="btn btn-default read-more-btn" title="<?php echo $tittle; ?>" data-lightbox-gallery="gallery1"> Zoom</a>
                                                                        <a class="btn btn-lg btn-danger" data-toggle="modal" data-target="#basicModal"   >
                                                                     <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Borrarrr</a>
                                                                   
                                                             </div>
   
-<!--                                                           <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true" >
+                           <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true" >
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
@@ -210,8 +210,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>-->
-                                                    </div>
+                            </div>
+                 </div>
                                          
                             
                              
