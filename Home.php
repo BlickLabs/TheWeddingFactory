@@ -33,7 +33,7 @@
 
 	<!-- start: CSS -->
         
-        <link href="themes/default/default.css" rel="stylesheet" type="text/css">
+        
 	<link id="bootstrap-style" href="css_template/bootstrap.min.css" rel="stylesheet">
 	<link href="css_template/bootstrap-responsive.min.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css_template/style_common.css" />
@@ -41,8 +41,7 @@
 	<link href="css_template/admin.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="font-awesome-4.2.0/css/font-awesome.css">
         <link rel="stylesheet" href="css_lightbox/lightbox.min.css"> 
-     
-	<link id="base-style-responsive" href="css_template/style-responsive.css" rel="stylesheet">
+        <link id="base-style-responsive" href="css_template/style-responsive.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
 	<!-- end: CSS -->
 	
@@ -177,7 +176,7 @@
 
                                                     <div class="masonry-thumb view view-first">
                                                         
-                                                            <img class="example-image" src="<?php echo $path= 'php/album/' . $row2['route'];?>" />
+                                                        <img class="example-image" src="<?php echo $path= 'php/album/' . $row2['route'];?>" id="mobile" />
                                                              
                                                         <div class="mask">
                                                                  <h2><?php echo $row2['title']?></h2>
@@ -314,7 +313,16 @@
 
 		<script src="js_template/custom.js"></script>
                 <script src="js_lighbox/lightbox.js"></script>
+                <script>
+                 jQuery(function ($) {
+    //$(".navigation").addClass("js");
+    //$(".navigation").addClass("js").before('<img src="img/menu.png" alt="mobile" width="50" height="50" id="mobile"/>');
 
+    $("#mobile").click(function () {
+        $(".view view-first").toggleClass('open');
+    });
+})
+                </script>
 
 	<!-- end: JavaScript-->
 	
