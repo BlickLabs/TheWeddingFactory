@@ -34,7 +34,7 @@
 	<link href="css_template/bootstrap-responsive.min.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css_template/style_common.css" />
         <link rel="stylesheet" type="text/css" href="css_template/style1.css" />
-	<link id="base-style" href="css_template/admin.css" rel="stylesheet">
+	<link href="css_template/admin.css" rel="stylesheet">
          <link rel="stylesheet" type="text/css" href="font-awesome-4.2.0/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="css/jasny-bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../css/nivo-lightbox.css">
@@ -187,14 +187,15 @@
                                                              <div class="mask hover-bg">
                                                                  <h2><?php echo $row2['title']?></h2>
                                                                        <p><?php echo $row2['id_content']?></p>
-                                                                       <a href="Delete_Photo.php?d=<?php echo $row2['id_content'] ?>" class="info"><i class="icon-trash"></i> Eliminar</a>
+                                                                       <a button type="button" href="#<?php echo $row2['id_content'] ?>" data-toggle="modal" class="btn btn-primary"  > <i class="icon-trash"></i> Eliminar</a>
                                                                        <a href="<?php echo $path; ?>" class="btn btn-default read-more-btn" title="<?php echo $tittle; ?>" data-lightbox-gallery="gallery1"> Zoom</a>
-                                                                       <a class="btn btn-lg btn-danger" data-toggle="modal" data-target="#basicModal"   >
-                                                                    <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Borrarrr</a>
+                                                                      
+                                                                       
+                                                                  
                                                                   
                                                             </div>
   
-<!--                                                           <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true" >
+                                                          <div class="modal fade" id="<?php echo $row2['id_content'] ?>" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true" >
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
@@ -210,7 +211,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>-->
+                            </div>
                                                     </div>
                                          
                             
