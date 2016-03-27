@@ -176,7 +176,8 @@
                     <label class="control-label" for="focusedInput">Titulo De la Imagen: </label>
 		    <div class="controls">
 		        <input class="input-xlarge focused" id="focusedInput" type="text" value="<?php echo $row['title'] ?>"
-                               id="title" name="title">
+                               id="title" name="title" pattern="[^'\x22]+"
+                               title="este campo no acepta caracteres especiales, solo letras">
 		    </div>
                 </div>
                  

@@ -143,7 +143,8 @@
              <div class="control-group col-sm-5 mar-top40">
 		<label class="control-label" for="focusedInput">Titulo De la Imagen: </label>
 		    <div class="controls">
-                        <input class="input-xlarge focused" type="text" id="title" name="title" >
+                        <input class="input-xlarge focused" type="text" id="title" name="title" pattern="[^'\x22]+"
+                               title="este campo no acepta caracteres especiales, solo letras">
 		    </div>
 	    </div>
             
@@ -179,8 +180,9 @@
             <div class="control-group col-sm-5 mar-top41">
 		<label class="control-label" for="focusedInput">Descripción:</label>
 		    <div class="controls">
-                        <textarea class="input-xlarge focused" type="text" name="description"
-                                  id="description"> </textarea>
+                        <input class="input-xlarge focused" type="text" name="description"
+                                  id="description" pattern="[^'\x22]+"
+                               title="este campo no acepta caracteres especiales, solo letras"/>
 		    </div>
 	    </div>
             <div class="control-group col-sm-5 mar-top41">
