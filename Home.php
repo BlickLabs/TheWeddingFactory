@@ -28,21 +28,20 @@
 	<!-- start: Mobile Specific -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- end: Mobile Specific -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script src="nivo-lightbox.js"></script>
+	
+       
 
 	<!-- start: CSS -->
-        <link href="nivo-lightbox.css" rel="stylesheet" type="text/css">
+        
         <link href="themes/default/default.css" rel="stylesheet" type="text/css">
 	<link id="bootstrap-style" href="css_template/bootstrap.min.css" rel="stylesheet">
 	<link href="css_template/bootstrap-responsive.min.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css_template/style_common.css" />
         <link rel="stylesheet" type="text/css" href="css_template/style1.css" />
 	<link href="css_template/admin.css" rel="stylesheet">
-         <link rel="stylesheet" type="text/css" href="font-awesome-4.2.0/css/font-awesome.css">
-    <link rel="stylesheet" type="text/css" href="css/jasny-bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../css/nivo-lightbox.css">
-    
+        <link rel="stylesheet" type="text/css" href="font-awesome-4.2.0/css/font-awesome.css">
+        <link rel="stylesheet" href="css_lightbox/lightbox.min.css"> 
+     
 	<link id="base-style-responsive" href="css_template/style-responsive.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
 	<!-- end: CSS -->
@@ -165,7 +164,7 @@
 					<div class="box-content">
 						<div class="masonry-gallery">
                                                     <?php
-                                                      
+                                                         include "config.php";
                                                         error_reporting(E_ALL);
                                                         $res2 = $mysqli2->query("SELECT * from 
                                                          content left join content_galery on content.id_content = content_galery.id_content where 
@@ -175,56 +174,45 @@
                                                              $path= 'php/album/' . $row2['route'];
                                                              
                                                     ?>
-<!--                                                            <div class="modal fade" id="basicModal2" tabindex="-1" role="dialog" aria-labelledby="basicModal2" aria-hidden="true">
-							    <div class="modal-dialog">
-							        <div class=" modal-content modal-content-img">
-							                <button type="button" class="close btn-close-img" data-dismiss="modal" aria-hidden="true">&times;</button>
-							            <div class="modal-body modal-body-img">
-							               <img class="grayscale modal-img" src="<?php echo 'php/album/' . $row2['route'];?>">
-							            </div>
-							        </div>
-							    </div>
-							</div>-->
-                                                             
+
                                                     <div class="masonry-thumb view view-first">
                                                         
-                                                         <img src="<?php echo $path= 'php/album/' . $row2['route'];?>" /></a>
-                                                             <div class="mask hover-bg">
+                                                            <img class="example-image" src="<?php echo $path= 'php/album/' . $row2['route'];?>" />
+                                                             
+                                                        <div class="mask">
                                                                  <h2><?php echo $row2['title']?></h2>
                                                                        <p><?php  $row2['id_content']?></p>
                                                                        <a button type="button" href="#<?php echo $row2['id_content'] ?>" data-toggle="modal" class="btn btn-danger"  > <i class="icon-trash"></i> Eliminar</a>
-                                                                       <a href="<?php echo $path; ?>" class="btn btn-success" title="<?php echo $tittle; ?>" data-lightbox-gallery="gallery1"><i class="icon-zoom-in"></i> Zoom</a>
-                                                                      
-                                                                       
-                                                                  
-                                                                  
+                                                                       <a button type="button" href="<?php echo $path= 'php/album/' . $row2['route'];?>" class="example-image-link btn btn-primary"  data-lightbox="example-set" ><i class="icon-zoom-in"></i> Zoom</a>
                                                             </div>
-  
-                                                          <div class="modal fade" id="<?php echo $row2['id_content'] ?>" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true" >
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                            <h4 class="modal-title" id="myModalLabel">Atención</h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            <h3>¿Estas seguro de eliminar el contenido?</h3>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="icon"></i>Cerrrar</button>
-                                            <a href="Delete_Photo.php?d=<?php echo $row2['id_content'] ?>"><button type="button" class="btn btn-success"><i class="icon"></i>Aceptar</button></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                                         
+                                                            <div class="modal fade" id="<?php echo $row2['id_content'] ?>" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true" >
+                                                                <div class="modal-dialog">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                                                <h4 class="modal-title" id="myModalLabel">Atención</h4>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                            <h3>¿Estas seguro de eliminar el contenido?</h3>
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                            <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="icon"></i>Cerrrar</button>
+                                                                            <a href="Delete_Photo.php?d=<?php echo $row2['id_content'] ?>"><button type="button" class="btn btn-success"><i class="icon"></i>Aceptar</button></a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            
+
                                                     </div>
                                          
-                            
+                                                     
                              
                                                            
 						<?php	}	?>
 
-                                                       
+                                                    
                        
 					        </div>
 					
@@ -237,7 +225,7 @@
                                
                                 
                         ?>    
-
+                    
 	
 			<!-- end: Content -->
 		</div><!--/#content.span10-->
@@ -300,7 +288,7 @@
 		<script src="js_template/jquery.cleditor.min.js"></script>
 	
 		<script src="js_template/jquery.noty.js"></script>
-                <script type="text/javascript" src="js/nivo-lightbox.js"></script>
+                
 		<script src="js_template/jquery.elfinder.min.js"></script>
 	
 		<script src="js_template/jquery.raty.min.js"></script>
@@ -320,13 +308,12 @@
 		<script src="js_template/jquery.sparkline.min.js"></script>
 	
 		<script src="js_template/counter.js"></script>
-                <script type="text/javascript" src="js/jasny-bootstrap.min.js"></script>    
+                 
 	
 		<script src="js_template/retina.js"></script>
 
 		<script src="js_template/custom.js"></script>
-                
-</script>
+                <script src="js_lighbox/lightbox.js"></script>
 
 
 	<!-- end: JavaScript-->
