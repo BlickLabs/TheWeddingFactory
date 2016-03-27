@@ -893,12 +893,77 @@ legend + .control-group {
   padding-top: 5px;
   text-align: right;
 }
+@media only screen and (max-width:768px) { 
+  .form-horizontal .control-label {
+  float: left;
+  width: 160px;
+  padding-top: 5px;
+  text-align: right;
+}
+}
+@media only screen and (max-width:480px) { 
+  .form-horizontal .control-label {
+ float: left;
+  width: 160px;
+  padding-top: 5px;
+  text-align: right;
+  
+}
+}
+@media only screen and (max-width:360px) { 
+  .form-horizontal .control-label {
+  float: left;
+  width: 160px;
+  padding-top: 5px;
+  text-align: right;
+}
+}
+@media only screen and (max-width:320px) { 
+  .form-horizontal .control-label {
+  float: left;
+  width: 160px;
+  padding-top: 5px;
+  text-align: right;
+}
+}
 
 .form-horizontal .controls {
   *display: inline-block;
   *padding-left: 20px;
-  margin-left: 180px;
   *margin-left: 0;
+}
+@media only screen and (max-width:768px) { 
+   .form-horizontal .controls {
+  display: inline-block;
+  padding-left: 35px;
+  padding-top: 5px;
+  margin-left: 0;
+  
+}
+}
+@media only screen and (max-width:480px) { 
+   .form-horizontal .controls {
+  display: inline-block;
+  padding-left: 35px;
+  padding-top: 5px;
+  margin-left: 0;
+}
+}
+@media only screen and (max-width:360px) { 
+   .form-horizontal .controls {
+  display: inline-block;
+  padding-left: 35px;
+  padding-top: 5px;
+  margin-left: 0;
+}
+}
+@media only screen and (max-width:320px) { 
+   .form-horizontal .controls {
+ display: inline-block;
+ padding-left: 35px;
+  padding-top: 5px;
+  margin-left: 0;
+}
 }
 
 .form-horizontal .controls:first-child {
