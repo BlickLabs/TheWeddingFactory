@@ -174,9 +174,9 @@
                                                              
                                                     ?>
 
-                                                    <div class="masonry-thumb view view-first">
+                                                    <div class="masonry-thumb view view-first" id="mobile">
                                                         
-                                                        <img class="example-image" src="<?php echo $path= 'php/album/' . $row2['route'];?>" id="mobile" />
+                                                        <img class="example-image" src="<?php echo $path= 'php/album/' . $row2['route'];?>"  />
                                                              
                                                         <div class="mask">
                                                                  <h2><?php echo $row2['title']?></h2>
@@ -313,16 +313,7 @@
 
 		<script src="js_template/custom.js"></script>
                 <script src="js_lighbox/lightbox.js"></script>
-                <script>
-                 jQuery(function ($) {
-    //$(".navigation").addClass("js");
-    //$(".navigation").addClass("js").before('<img src="img/menu.png" alt="mobile" width="50" height="50" id="mobile"/>');
-
-    $("#mobile").click(function () {
-        $(".view view-first").toggleClass('open');
-    });
-})
-                </script>
+                
 
 	<!-- end: JavaScript-->
 	
