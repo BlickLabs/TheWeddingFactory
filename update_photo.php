@@ -193,12 +193,12 @@
 		<div class="controls">
                      <?php if ($row['status'] == 'true') { ?>
                             <select id="status" data-rel="chosen" name="status">
-                                <option value="true"><?php echo 'activo' ?></option>
+                                <option value="true"><?php echo 'Activo' ?></option>
                                 <option value="false">Inactivo</option>
                             </select>
                         <?php } else {?>
                         <select id="status" data-rel="chosen" name="status">
-                            <option value="false"><?php echo 'inactivo' ?></option>
+                            <option value="false"><?php echo 'Inactivo' ?></option>
                             <option value="true">activo</option>
                         </select>
                          <?php } ?>

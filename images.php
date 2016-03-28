@@ -172,9 +172,9 @@
                             <td style="text-align: center;padding-top: 70px" width="5%">
                                 <?php 
                                         if ($row['status']=='true'){
-                                            echo 'acitvo';
+                                            echo 'Activo';
                                         }elseif($row['status']=='false') {
-                                            echo 'inactivo';
+                                            echo 'Inactivo';
                                         }    
                                  ?>
                             </td>
