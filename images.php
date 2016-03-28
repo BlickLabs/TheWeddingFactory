@@ -32,6 +32,9 @@
 	<!-- start: CSS -->
 	<link id="bootstrap-style" href="css_template/bootstrap.min.css" rel="stylesheet">
 	<link href="css_template/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="https://cdn.datatables.net/1.10.11/css/dataTables.bootstrap.min.css" rel="stylesheet">
+        
+        
 	<link id="base-style" href="css_template/admin.css" rel="stylesheet">
           <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
 	<link id="base-style-responsive" href="css_template/style-responsive.css" rel="stylesheet">
@@ -68,7 +71,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</a>
-                            <a class="brand" href="index.html"><span><h1>The Wedding Factory</h1></span></a>
+                            <a class="brand" href="#"><span><h2>The Wedding Factory</h2></span></a>
 								
 				<!-- start: Header Menu -->
 				<div class="nav-no-collapse header-nav">
@@ -83,7 +86,7 @@
 							</a>
 							<ul class="dropdown-menu">
 								<li class="dropdown-menu-title">
-                                                                    <span>Opciones</span>
+                                                                    <span>Opciones</span>   
 								</li>
 								
                                                                 <li><a href="logout.php?logout">
@@ -145,7 +148,7 @@
                                 <a href="create_file.php" class="btn btn-primary btn-md mar-topbtn"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Añadir Nuevo Archivo</a><br/>
                             </center>
             </p>
-            <table id="ghatable" class="display table table-bordered table-stripe" cellspacing="4"  style="margin-top: 50px">
+            <table id="example" class="display table table-bordered table-stripe" cellspacing="4"  style="margin-top: 50px">
                 <thead >
                     <tr >
 <!--                        <th style="text-align: center">ID</th>-->
@@ -241,7 +244,11 @@
 	</footer>
 	
 	<!-- start: JavaScript-->
-
+        <script>
+        $(document).ready(function() {
+    $('#ghatable').DataTable();
+} );
+        </script>
 		<script src="js_template/jquery-1.9.1.min.js"></script>
 	<script src="js_template/jquery-migrate-1.0.0.min.js"></script>
 	
@@ -257,7 +264,7 @@
 	
 		<script src='js_template/fullcalendar.min.js'></script>
 	
-		<script src='js_template/jquery.dataTables.min.js'></script>
+		
 
 		<script src="js_template/excanvas.js"></script>
 	<script src="js_template/jquery.flot.js"></script>
@@ -296,6 +303,17 @@
 		<script src="js_template/retina.js"></script>
 
 		<script src="js_template/custom.js"></script>
+                <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+                <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script language="JavaScript" type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script language="JavaScript" type="text/javascript" src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script>
+        <script language="JavaScript" type="text/javascript" src="https://cdn.datatables.net/1.10.11/js/dataTables.bootstrap.min.js"></script>
+        <script language="JavaScript" type="text/javascript">
+            $(document).ready(function() {
+                 $('#example').DataTable();
+            } );
+
+        </script>
 	<!-- end: JavaScript-->
 	
 </body>
