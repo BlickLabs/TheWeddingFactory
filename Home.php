@@ -24,7 +24,10 @@
 	<meta name="author" content="Dennis Ji">
 	<meta name="keyword" content="Metro, Metro UI, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
 	<!-- end: Meta -->
+	    
 	
+			<!-- end: Content -->
+		
 	<!-- start: Mobile Specific -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- end: Mobile Specific -->
@@ -70,12 +73,12 @@
 	<div class="navbar">
 		<div class="navbar-inner">
 			<div class="container-fluid">
-				<a class="btn btn-navbar" data-toggle="collapse" data-target=".top-nav.nav-collapse,.sidebar-nav.nav-collapse">
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".sidebar-nav.nav-collapse">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</a>
-                            <a class="brand" href="index.html"><span><h1>The Wedding Factory</h1></span></a>
+                            <a class="brand" href="#"><span><h2>The Wedding Factory</h2></span></a>
 								
 				<!-- start: Header Menu -->
 				<div class="nav-no-collapse header-nav">
@@ -91,10 +94,13 @@
 							</a>
 							<ul class="dropdown-menu">
 								<li class="dropdown-menu-title">
- 									<span>Opciones</span>
+                                                                    <span>Opciones</span>   
 								</li>
 								
-								<li><a href="logout.php?logout"><i class="halflings-icon off"></i> Cerrar Sesión</a></li>
+                                                                <li><a href="logout.php?logout">
+                                                                        <i class="halflings-icon off">
+                                                                            </i> Cerrar Sesión
+                                                                    </a>  </li>
 							</ul>
 						</li>
 						<!-- end: User Dropdown -->
@@ -141,7 +147,12 @@
 				</li>
 				<li><a href="#">Galería</a></li>
 			</ul>
-                        <?php
+                        
+                        <div class="row-fluid sortable">
+                           
+				<div class="box span12">
+					<div class="box-header" data-original-title>
+                                             <?php
                             include "config.php";
                             error_reporting(E_ALL);
                             $res = $mysqli->query("SELECT id_galery,title_galery FROM galery");
@@ -150,9 +161,6 @@
                                 $id_pr=$row['id_galery'];
                                 
                         ?>
-                        <div class="row-fluid sortable">
-				<div class="box span12">
-					<div class="box-header" data-original-title>
 						<h2><i class="halflings-icon white picture"></i><span class="break">&nbsp;<?php echo $row['title_galery'];?></span></h2>
 						<div class="box-icon">
 						
@@ -174,7 +182,7 @@
                                                              
                                                     ?>
 
-                                                    <div class="masonry-thumb view view-first" id="mobile">
+                                                    <div class="masonry-thumb view view-first" >
                                                         
                                                         <img class="example-image" src="<?php echo $path= 'php/album/' . $row2['route'];?>"  />
                                                              
@@ -205,44 +213,16 @@
                                                             
 
                                                     </div>
-                                         
-                                                     
-                             
-                                                           
-						<?php	}	?>
-
-                                                    
-                       
-					        </div>
-					
+                                                    <?php	}	?>
+                                                </div>
 				</div><!--/span-->
-			
 			</div><!--/row-->
                     </div><!--/.fluid-container-->
-                                       <?php }
-                           
-                               
-                                
-                        ?>    
-                    
-	
-			<!-- end: Content -->
-		</div><!--/#content.span10-->
+                                       <?php }?>    
+                </div><!--/#content.span10-->
 		</div><!--/fluid-row-->
+                </div>
 		
-	<div class="modal hide fade" id="myModal">
-		<div class="modal-header">
-			<button type="button" class="close" data-dismiss="modal">×</button>
-			<h3>Settings</h3>
-		</div>
-		<div class="modal-body">
-			<p>Here settings can be configured...</p>
-		</div>
-		<div class="modal-footer">
-			<a href="#" class="btn" data-dismiss="modal">Close</a>
-			<a href="#" class="btn btn-primary">Save changes</a>
-		</div>
-	</div>
 	
 	<div class="clearfix"></div>
 	
@@ -262,8 +242,7 @@
 	
 		<script src="js_template/jquery-ui-1.10.0.custom.min.js"></script>
 	
-		<script src="js_template/jquery.ui.touch-punch.js"></script>
-	
+		
 		<script src="js_template/modernizr.js"></script>
 	
 		<script src="js_template/bootstrap.min.js"></script>
@@ -308,8 +287,6 @@
 	
 		<script src="js_template/counter.js"></script>
                  
-	
-		<script src="js_template/retina.js"></script>
 
 		<script src="js_template/custom.js"></script>
                 <script src="js_lighbox/lightbox.js"></script>

@@ -63,7 +63,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</a>
-				<a class="brand" href="index.html"><span>The Wedding Factory</span></a>
+                            <a class="brand" href="#"><span><h2>The Wedding Factory</h2></span></a>
 								
 				<!-- start: Header Menu -->
 				<div class="nav-no-collapse header-nav">
@@ -81,10 +81,13 @@
 							</a>
 							<ul class="dropdown-menu">
 								<li class="dropdown-menu-title">
- 									<span>Opciones</span>
+                                                                    <span>Opciones</span>   
 								</li>
 								
-								<li><a href="logout.php?logout"><i class="halflings-icon off"></i> Cerrar Sesión</a></li>
+                                                                <li><a href="logout.php?logout">
+                                                                        <i class="halflings-icon off">
+                                                                            </i> Cerrar Sesión
+                                                                    </a>  </li>
 							</ul>
 						</li>
 						<!-- end: User Dropdown -->

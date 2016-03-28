@@ -68,7 +68,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</a>
-				<a class="brand" href="index.html"><span>The Wedding Factory</span></a>
+                            <a class="brand" href=""><span><h2>The Wedding Factory</h2></span></a>
 								
 				<!-- start: Header Menu -->
 				<div class="nav-no-collapse header-nav">
