@@ -149,9 +149,15 @@
             <center>
                 <div id="page-selection" style="margin-bottom: 70px;margin-top:70px;" >
                     <ul class="pagination">
-                        <li id="1" class="prev pagg"><a href="javascript:void(0);" style="color: #212121">1</a></li>
-                        <li id="2" class="prev pagg"><a href="javascript:void(0);" style="color: #212121">2</a></li>
-                        <li id="3" class="prev pagg"><a href="javascript:void(0);" style="color: #212121">3</a></li>
+                        <?php
+                               for ($i=1; $i <= $row; $i++) { 
+                                   # code...
+                               }
+                        ?>
+                        <li id="<?php echo $i;?>" class="prev pagg"><a href="javascript:void(0);" style="color: #212121"><?php echo $i;?></a></li>
+                        <?php
+                               }
+                        ?>
                     </ul>
                 </div>
             </center>
