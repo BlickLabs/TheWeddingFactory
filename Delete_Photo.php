@@ -11,7 +11,8 @@ include "config.php";
         if ($stmt->execute()):
             
             $mysqli->close();
-            
+        $filename=$_GET['f'];
+            unlink('./php/album/'.$filename);
             echo "<script>location.href='Home.php'</script>";
         else:
             echo "<script>alert('" . $stmt->error . "')</script>";

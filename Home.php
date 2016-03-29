@@ -191,7 +191,6 @@
                                                                        <p><?php  $row2['id_content']?></p>
                                                                        <a button type="button" href="#<?php echo $row2['id_content'] ?>" data-toggle="modal" class="btn btn-danger"  > <i class="icon-trash"></i> Eliminar</a>
                                                                        <a button type="button" href="<?php echo $path= 'php/album/' . $row2['route'];?>" class="example-image-link btn btn-primary"  data-lightbox="example-set" ><i class="icon-zoom-in"></i> Zoom</a>
-                                                                        
                                                                        <a class="btn btn-lg btn-success mar-toptable" href="update_photo.php?u=<?php echo $row2['id_content'] ?>"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Editar</a>
                                                             </div>
                                                          
@@ -207,7 +206,7 @@
                                                                         </div>
                                                                         <div class="modal-footer">
                                                                             <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="icon"></i>Cerrrar</button>
-                                                                            <a href="Delete_Photo.php?d=<?php echo $row2['id_content'] ?>"><button type="button" class="btn btn-success"><i class="icon"></i>Aceptar</button></a>
+                                                                            <a href="Delete_Photo.php?d=<?php echo $row2['id_content'] ?>&f=<?php echo $row2['route'] ?>"><button type="button" class="btn btn-success"><i class="icon"></i>Aceptar</button></a>
                                                                         </div>
                                                                     </div>
                                                                 </div>
