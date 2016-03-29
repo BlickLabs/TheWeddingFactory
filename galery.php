@@ -118,7 +118,7 @@
                         foreach ($json['images'] as $value) {
                         $path = $value['path'];
                         $tittle = $value['title'];
-                        $short_description = $value['description'];
+                       
                         $img_details = json_encode($value);
                         $RequestText = urlencode($img_details);
                         if($count <=9){
@@ -152,7 +152,7 @@
                         <?php
                                for ($i=1; $i < $row; $i++) { 
                                    # code...
-                               }
+                               
                         ?>
                         <li id="<?php echo $i;?>" class="prev pagg"><a href="javascript:void(0);" style="color: #212121"><?php echo $i;?></a></li>
                         <?php
