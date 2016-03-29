@@ -38,12 +38,11 @@
 	<link id="base-style-responsive" href="css_template/style-responsive.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
 	<script src="js/jquery.js"></script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/upload.js"></script>
-<script src="js/bootbox.js"></script>
-<script src="js/bootbox.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/upload.js"></script>
+        <script src="js/bootbox.js"></script>
+        <script src="js/bootbox.min.js"></script>
         
         	<link rel="shortcut icon" href="img/favicon.ico">
 	<!-- end: Favicon -->
@@ -147,7 +146,7 @@
 		<label class="control-label" for="focusedInput">Titulo De la Imagen: </label>
 		    <div class="controls">
                         <input class="input-xlarge focused" type="text" id="title" name="title" pattern="[^'\x22]+"
-                               title="este campo no acepta caracteres especiales, solo letras">
+                               title="este campo no acepta caracteres especiales, solo letras" required="">
 		    </div>
 	    </div>
             
@@ -158,10 +157,10 @@
                 </div>
             </div>
             
-            <div class="control-group col-sm-5 mar-top41">
-		<label class="control-label" for="selectError">Asignar a Galería:</label>
-		<div class="controls">
-                    <select  data-rel="chosen" name="galery[]" id="galery">
+            <div class="control-group  mar-top41" style="visibility:hidden">
+		<label class="control-label" for="selectError">Galería Asignada:</label>
+                <div class="controls" >
+                    <select  data-rel="chosen" name="galery[]" id="galery" >
                         <?php
                 $condition='true';
                 $sql1 = "SELECT id_galery,title_galery from galery WHERE status='".$condition."'";
@@ -185,7 +184,7 @@
 		    <div class="controls">
                         <input class="input-xlarge focused" type="text" name="description"
                                   id="description" pattern="[^'\x22]+"
-                               title="este campo no acepta caracteres especiales, solo letras"/>
+                                  title="este campo no acepta caracteres especiales, solo letras" required=""/>
 		    </div>
 	    </div>
             <div class="control-group col-sm-5 mar-top41">
@@ -204,7 +203,7 @@
             </div>
             <center>
                 <a href="images.php" class="btn btn-primary btn-md mar-right"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span><i class="icon-arrow-left"></i>&nbsp; Regresar</a>
-                <button type="submit"  class="btn btn-success "><i class="icon-save"></i>&nbsp;Guardar</button>
+                <button type="submit"  class="btn btn-success "><i class="icon-save"></i>&nbsp; Guardar</button>
             </center>
                 
             

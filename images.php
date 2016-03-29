@@ -155,7 +155,7 @@
                         <th style="text-align: center">Titulo</th>
                         <th style="text-align: center">Imagen</th>
                         <th style="text-align: center"> Estatus</th>
-                        <th style="text-align: center"> Opciones</th>
+                        <th style="text-align: center"> Descripción</th>
                        
                     </tr>
                 </thead>
@@ -169,7 +169,7 @@
 <!--                            <td style="text-align: center;" width="2%" class="mar-toptable"><?php echo $row['id_content'] ?></td>-->
                             <td style="text-align: center;"width="8%"><?php echo $row['title'];  ?></td>
                             <td width="10%"><img class="grayscale center-block" src="<?php echo 'php/album/' . $row['route'];?>" style="width: 250px;"></td>
-                            <td style="text-align: center;padding-top: 70px" width="5%">
+                            <td style="text-align: center;" width="5%">
                                 <?php 
                                         if ($row['status']=='true'){
                                             echo 'Activo';
@@ -179,11 +179,7 @@
                                  ?>
                             </td>
                            
-                            <td width="10%">
-                                <center>
-                                <a class="btn btn-lg btn-success mar-toptable" href="update_photo.php?u=<?php echo $row['id_content'] ?>"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Editar</a>
-                                </center>
-                            </td>
+                            <td  style="text-align: center;" width="10%"><?php echo $row['description']?> </td>
                             
                             
                             
@@ -244,11 +240,7 @@
 	</footer>
 	
 	<!-- start: JavaScript-->
-        <script>
-        $(document).ready(function() {
-    $('#ghatable').DataTable();
-} );
-        </script>
+       
 		<script src="js_template/jquery-1.9.1.min.js"></script>
 	<script src="js_template/jquery-migrate-1.0.0.min.js"></script>
 	
@@ -304,7 +296,7 @@
 
 		<script src="js_template/custom.js"></script>
                 <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-                <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+             
         <script language="JavaScript" type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script language="JavaScript" type="text/javascript" src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script>
         <script language="JavaScript" type="text/javascript" src="https://cdn.datatables.net/1.10.11/js/dataTables.bootstrap.min.js"></script>
