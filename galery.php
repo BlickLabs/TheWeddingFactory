@@ -150,7 +150,7 @@
                 <div id="page-selection" style="margin-bottom: 70px;margin-top:70px;" >
                     <ul class="pagination">
                         <?php
-                               for ($i=1; $i <= $row; $i++) { 
+                               for ($i=1; $i < $row; $i++) { 
                                    # code...
                                }
                         ?>
