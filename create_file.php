@@ -146,7 +146,7 @@
 		<label class="control-label" for="focusedInput">Titulo De la Imagen: </label>
 		    <div class="controls">
                         <input class="input-xlarge focused" type="text" id="title" name="title" pattern="[^'\x22]+"
-                               title="este campo no acepta caracteres especiales, solo letras" required="">
+                               title="este campo no acepta caracteres especiales, solo letras" placeholder="Campo Opcional">
 		    </div>
 	    </div>
             
@@ -184,7 +184,7 @@
 		    <div class="controls">
                         <input class="input-xlarge focused" type="text" name="description"
                                   id="description" pattern="[^'\x22]+"
-                                  title="este campo no acepta caracteres especiales, solo letras" required=""/>
+                                  title="este campo no acepta caracteres especiales, solo letras" placeholder="campo opcional"/>
 		    </div>
 	    </div>
             <div class="control-group col-sm-5 mar-top41">
@@ -203,7 +203,8 @@
             </div>
             <center>
                 <a href="images.php" class="btn btn-primary btn-md mar-right"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span><i class="icon-arrow-left"></i>&nbsp; Regresar</a>
-                <button type="submit"  class="btn btn-success "><i class="icon-save"></i>&nbsp; Guardar</button>
+                <button type="submit"  class="btn btn-success" data-loading-text="Guardando ..."><i class="icon-save"></i>&nbsp; Guardar</button>
+               
             </center>
                 
             
@@ -230,7 +231,7 @@
 	</footer>
 	
 	<!-- start: JavaScript-->
-
+          
 		<script src="js_template/jquery-1.9.1.min.js"></script>
 	<script src="js_template/jquery-migrate-1.0.0.min.js"></script>
 	
@@ -287,6 +288,19 @@
 		<script src="js_template/custom.js"></script>
                 <script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
                 <script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+                <link rel="stylesheet" href="dist/ladda-themeless.min.css">
+<script src="dist/spin.min.js"></script>
+<script src="dist/ladda.min.js"></script>
+                <script type="text/javascript">  
+$(function() { 
+    $(".btn").click(function(){
+        $(this).button('loading').delay(6000).queue(function() {
+            $(this).button('reset');
+            $(this).dequeue();
+        });        
+    });
+});   
+</script>
 	<!-- end: JavaScript-->
 	
 </body>
