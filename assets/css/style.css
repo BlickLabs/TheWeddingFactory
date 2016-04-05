@@ -116,7 +116,7 @@ fieldset {
 }
 /*END PRELOADER DESIGN*/
 .no-padding { padding: 0px }
-.section-padding { padding: 85px 0 }
+
 /*START SECTION TITLE DESIGN*/
 .section-title { margin-bottom: 50px }
 .section-title h1 {
@@ -192,7 +192,7 @@ fieldset {
 }
 @media only screen and (max-width:480px) { 
     .section-title4 h1 { 
-	font-size: 35px;
+	font-size: 40px;
 	text-align: center;
         line-height:45px;
         margin-top: 50px;
@@ -200,7 +200,7 @@ fieldset {
 }
 @media only screen and (max-width:360px) { 
     .section-title4 h1 { 
-	font-size: 35px;
+	font-size: 40px;
         line-height:30px;
         text-align: center; 
         margin-top: 50px;
@@ -2085,3 +2085,17 @@ width: 100px;
     }
 }
 
+.section-padding { padding: 55px 0 }
+@media only screen and (max-width:768px) { 
+    .section-padding { padding: 35px 0 
+}
+}
+@media only screen and (max-width:480px) { 
+    .section-padding { padding: 35px 0 }
+}
+@media only screen and (max-width:360px) { 
+   .section-padding { padding: 35px 0 }
+}
+@media only screen and (max-width:320px) { 
+   .section-padding { padding: 35px 0 }
+}
