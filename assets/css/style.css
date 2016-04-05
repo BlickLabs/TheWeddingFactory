@@ -506,23 +506,27 @@ height: 100%;
 }
 .hero-text2 h2 {
     color: #fff;
-    font-size: 75px;
-    line-height: 130%;
+    font-size: 90px;
+    line-height: 120%;
     
 }
 @media only screen and (max-width:768px) { 
-    .hero-text2 h2 { font-size: 60px }
+    .hero-text2 h2 { 
+        font-size: 60px;
+        line-height: 55px;
+    
+    }
 }
 @media only screen and (max-width:480px) { 
     .hero-text2 h2 {
         font-size: 45px;
-        line-height: 54px;
+        line-height: 55px;
     }
 }
 @media only screen and (max-width:360px) { 
     .hero-text2 h2 {
         font-size: 43px;
-        line-height: 75px;
+        line-height: 55px;
     }
 }
 .header_social { margin-top: 30px }
